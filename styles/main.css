@@ -536,7 +536,10 @@ footer {
 /*  #switcher {
     display: none; }*/
     h1{
-      font-size: 60px;
+      font-size: 55px;
+    }
+    #switcher{
+      height: 150px;
 
     }
 

@@ -61,7 +61,7 @@ function generate_rows(data){
   var current_id = 1;
 
   data.forEach(function(a){
-    var imgsrc = "images/" + a.gsx$primaryimage.$t;
+    var imgsrc = a.gsx$primaryimage.$t;
     var title = a.gsx$name.$t;
     var description = a.gsx$description.$t;
     var href = "jkelleyrtp.github.io/portfolio/"

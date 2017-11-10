@@ -323,7 +323,7 @@ button.light-button {
     transform: rotate(360deg); } }
 .top-part {
   padding: 150px 0;
-  margin-top: 200px;
+  margin-top: 180px;
   background: #f2f3f7;
   background: url(houston-award-wide.jpg) top;
   background-size: cover; }
@@ -536,7 +536,7 @@ footer {
 /*  #switcher {
     display: none; }*/
     h1{
-      font-size: 80px;
+      font-size: 60px;
 
     }
 

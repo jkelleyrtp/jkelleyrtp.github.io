@@ -397,7 +397,7 @@ button.light-button {
   top: 0px !important;
   width: 100%;
   z-index: 999 !important;
-  height: 200px;
+  height: 180px;
 
     -webkit-transition: all .5s;
       transition: all .5s;
@@ -533,8 +533,12 @@ footer {
       color: #FFFFFF; }
 
 @media only screen and (max-width: 768px) {
-  #switcher {
-    display: none; }
+/*  #switcher {
+    display: none; }*/
+    h1{
+      font-size: 80px;
+
+    }
 
   a.purchase {
     width: 100%; } }

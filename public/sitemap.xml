@@ -3,42 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://jkelleyrtp.github.io/portfolio/portfolio/work2_multilateration/</loc>
+    <loc>https://jkelleyrtp.github.io/portfolio/work2_multilateration/</loc>
     <lastmod>2016-11-05T19:41:01+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://jkelleyrtp.github.io/portfolio/portfolio/work3/</loc>
+    <loc>https://jkelleyrtp.github.io/portfolio/work3/</loc>
     <lastmod>2016-11-05T19:44:32+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://jkelleyrtp.github.io/portfolio/portfolio/first-robotics/</loc>
+    <loc>https://jkelleyrtp.github.io/portfolio/first-robotics/</loc>
     <lastmod>2016-11-05T19:53:42+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://jkelleyrtp.github.io/portfolio/portfolio/work6/</loc>
+    <loc>https://jkelleyrtp.github.io/portfolio/work6/</loc>
     <lastmod>2016-11-05T19:56:17+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://jkelleyrtp.github.io/portfolio/contact/</loc>
+    <loc>https://jkelleyrtp.github.io/contact/</loc>
     <lastmod>2016-11-06T13:00:25+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://jkelleyrtp.github.io/portfolio/about/</loc>
+    <loc>https://jkelleyrtp.github.io/about/</loc>
     <lastmod>2016-11-05T21:05:33+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://jkelleyrtp.github.io/portfolio/portfolio/work1_himcm/</loc>
+    <loc>https://jkelleyrtp.github.io/portfolio/work1_himcm/</loc>
     <lastmod>2016-11-05T18:25:22+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://jkelleyrtp.github.io/portfolio/categories/</loc>
+    <loc>https://jkelleyrtp.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jkelleyrtp.github.io/</loc>
+    <lastmod>2016-11-05T19:41:01+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -49,13 +55,7 @@
   </url>
   
   <url>
-    <loc>https://jkelleyrtp.github.io/portfolio/portfolio/</loc>
-    <lastmod>2016-11-05T19:41:01+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jkelleyrtp.github.io/portfolio/tags/</loc>
+    <loc>https://jkelleyrtp.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   

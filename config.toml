@@ -1,4 +1,4 @@
-baseurl = "https://jkelleyrtp.github.io/portfolio"
+baseurl = "https://jkelleyrtp.github.io"
 title = "Jonathan Ryan Kelley"
 theme = "hugo-creative-portfolio-theme"
 languageCode = "en-us"

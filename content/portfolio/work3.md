@@ -1,5 +1,5 @@
 +++
-image = "/img/portfolio/fusion-modeling.png"
+image = "img/portfolio/fusion-modeling.png"
 showonlyimage = false
 date = "2016-11-05T19:44:32+05:30"
 title = "Computational Nuclear Fusion Research"

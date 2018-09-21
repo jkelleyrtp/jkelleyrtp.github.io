@@ -2,7 +2,7 @@
 date = "2016-11-05T19:41:01+05:30"
 title = "LEAF Systems: Collaborative Multilateration"
 draft = false
-image = "/img/portfolio/multilateration.png"
+image = "img/portfolio/multilateration.png"
 showonlyimage = false
 weight = 1
 +++

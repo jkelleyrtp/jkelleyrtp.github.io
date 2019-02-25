@@ -6,7 +6,7 @@ title = "FIRST Robotics"
 weight = 5
 
 +++
-Founder, lead designer, and director of [Cortechs Robotics FRC 5511.](https://www.thebluealliance.com/team/5511/history)
+Visionary! Founder, lead designer, and director of [Cortechs Robotics FRC 5511.](https://www.thebluealliance.com/team/5511/history)
 
 Love robotics!
 

@@ -1,16 +1,18 @@
 +++
+date = "2016-11-05T19:53:42+05:30"
 image = "img/portfolio/robot2018.jpg"
 showonlyimage = false
-draft = false
-date = "2016-11-05T19:53:42+05:30"
 title = "FIRST Robotics"
 weight = 5
+
 +++
+Visionary! Founder, lead designer, and director of [Cortechs Robotics FRC 5511.](https://www.thebluealliance.com/team/5511/history)
 
-Founder, lead designer, and director of [Cortechs Robotics FRC 5511.](https://www.thebluealliance.com/team/5511/history)
-<!--more-->
+Love robotics!
 
----
+ <!--more-->
+
+***
 
 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
 
@@ -30,4 +32,4 @@ The Big Oxmox advised her not to do so, because there were thousands of bad Comm
 * Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 * Aliquam tincidunt mauris eu risus.
 
-When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then  
+When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then

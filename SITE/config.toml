@@ -1,4 +1,4 @@
-baseurl = "jonathan-kelley.com"
+baseurl = "https://jonathan-kelley.com"
 title = "Jonathan Kelley"
 theme = "hugo-creative-portfolio-theme"
 # theme = "hugo-frances-theme"

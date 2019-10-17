@@ -1,6 +1,7 @@
 baseurl = "https://jkelleyrtp.github.io/"
-title = "Jonathan Ryan Kelley"
+title = "Jonathan Kelley"
 theme = "hugo-creative-portfolio-theme"
+# theme = "hugo-frances-theme"
 languageCode = "en-us"
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
@@ -10,10 +11,10 @@ googleAnalytics = ""
 [params]
   # Style options: default (pink), blue, green, pink, red, sea, violet
   # Use custom.css for your custom styling
-  title = "Jonathan Ryan Kelley"
-  style = "blue"
+  title = "Jonathan Kelley"
+  style = "sea"
   description = "Describe your website"
-  copyright = "&copy;2016 Jonathan Kelley"
+  copyright = "&copy;2019 Jonathan Kelley"
   sidebarAbout = [
     "I am a student in robotics and entrepeneurship passionate about data and business.",
     "Originally from North Carolina, currently studying at Olin College of Engineering."
@@ -43,8 +44,8 @@ googleAnalytics = ""
   url = "about/"
 
   [[params.navlinks]]
-  name = "Get in touch"
-  url = "contact/"
+  name = "Blog"
+  url = "blog/"
 
   [[params.navlinks]]
   name = "Resume"
@@ -55,7 +56,7 @@ googleAnalytics = ""
   #googleplus    = "full profile url in googleplus"
   email         = "jkelley@olin.edu"
   #twitter       = "full profile url in twitter"
-  linkedin      = "https://www.linkedin.com/in/jonathan-kelley-42a340151/"
+  linkedin      = "https://www.linkedin.com/in/jonathan-r-kelley/"
   #stackoverflow = "full profile url in stackoverflow"
   #instagram     = "full profile url in instagram"
   github        = "https://github.com/jkelleyrtp"

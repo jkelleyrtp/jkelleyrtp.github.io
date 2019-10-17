@@ -27,7 +27,7 @@ body {
 .box-masonry h4 a {
     color: #90d4ed;
     /* color: #81dafc; */
-    /* color: #379392; */
+    /* color: #90d4ed; */
 }
 
 .sidebar-menu li.active a {
@@ -61,4 +61,24 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .box-masonry .box-masonry-image.with-hover-overlay:before {
     background: #37383870;
+}
+
+a {
+    color: #90d4ed;
+
+    /* color: #90d4ed; */
+    text-decoration: none;
+}
+
+blockquote {
+    /* padding: 12px 24px;
+    margin: 0 0 24px;
+    font-size: 16px; */
+    border-left: 5px solid #90d4ed;
+    /* border-left: 5px solid #90d4ed; */
+}
+
+.img-responsive {
+    padding-right: 45px;
+    margin: 0 auto;
 }

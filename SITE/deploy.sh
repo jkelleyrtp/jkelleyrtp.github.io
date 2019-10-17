@@ -5,9 +5,9 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 # Build the project.
 hugo -t hugo-creative-portfolio-theme # if using a theme, replace with `hugo -t <YOURTHEME>`
 
-hugo -d .
+hugo -d ../
 # Go To Public folder
-cd public
+cd ..
 # Add changes to git.
 git add .
 
@@ -22,4 +22,4 @@ git commit -m "$msg"
 git push origin master
 
 # Come Back up to the Project Root
-cd ..
+cd SITE

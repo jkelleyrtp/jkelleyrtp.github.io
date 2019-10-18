@@ -1,21 +1,17 @@
 +++
 date = "2016-11-05T21:05:33+05:30"
+draft = true
 title = "About me"
+
 +++
+Hello there!
 
-An sincerity so extremity he additions. Her yet **there truth merit**. Mrs all projecting favourable now unpleasing. Son law garden chatty temper. Oh children provided to mr elegance marriage strongly. Off can admiration prosperous now devonshire diminution law.
+I am a Franklin W. Olin College systems engineering student and business enthusiast. Originally from North Carolina, I have somehow ended up in the cold suburbs of the northeast in one of the most interesting colleges in the world. With only about 360 students and 3 degrees, Olin is one of the few places in the US where your days can be filled with designing microprocessors, machining a fusion reactor, running a startup incubator, and unicycling through the campus center all while running a baked goods business out of your room.
 
-Received overcame oh sensible so at an. Formed do change merely to county it. **Am separate contempt** domestic to to oh. On relation my so addition branched. Put hearing cottage she norland letters equally prepare too. Replied exposed savings he no viewing as up. Soon body add him hill. No father living really people estate if. Mistake do produce beloved demesne if am pursuit.
+No, seriously, this was my day today.
 
-![This is me][1]
+When not doing whacky, project based learning, I enjoy the outdoors (who doesn't?) and spend way too much money on bubble tea.
 
-The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn't listen. She packed her seven versalia, put her initial into the belt and made herself on the way.
+Over the years, my interests have shifted around from robotics to particle physics to augmented reality and now to startups. As a result, I've worked in nuclear labs, machine shops, product development firms, 
 
-#### Education
-
-* Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-* Aliquam tincidunt mauris eu risus.
-
-When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then
-
-[1]: /img/about.jpg
+I am particularly excited about the intersection of data and business 

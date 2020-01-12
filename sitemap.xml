@@ -1,45 +1,109 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://jonathan-kelley.com/portfolio/work2_multilateration/</loc>
-    <lastmod>2016-11-05T19:41:01+05:30</lastmod>
+    <loc>http://jonathan-kelley.com/portfolio/hash/</loc>
+    <lastmod>2020-01-05T19:41:01+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://jonathan-kelley.com/portfolio/work3/</loc>
-    <lastmod>2016-11-05T19:44:32+05:30</lastmod>
+    <loc>http://jonathan-kelley.com/portfolio/quartz/</loc>
+    <lastmod>2020-01-05T19:41:01+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://jonathan-kelley.com/portfolio/first-robotics/</loc>
-    <lastmod>2016-11-05T19:53:42+05:30</lastmod>
+    <loc>http://jonathan-kelley.com/portfolio/leaf/</loc>
+    <lastmod>2020-01-05T19:41:01+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://jonathan-kelley.com/portfolio/work6/</loc>
-    <lastmod>2016-11-05T19:56:17+05:30</lastmod>
+    <loc>http://jonathan-kelley.com/portfolio/fusion/</loc>
+    <lastmod>2020-01-05T19:41:01+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://jonathan-kelley.com/portfolio/work8/</loc>
-    <lastmod>2016-11-05T19:59:22+05:30</lastmod>
+    <loc>http://jonathan-kelley.com/portfolio/conrad/</loc>
+    <lastmod>2020-01-05T19:41:01+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://jonathan-kelley.com/portfolio/work9/</loc>
-    <lastmod>2016-11-05T20:02:19+05:30</lastmod>
+    <loc>http://jonathan-kelley.com/portfolio/spatial/</loc>
+    <lastmod>2020-01-05T19:41:01+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://jonathan-kelley.com/portfolio/work10/</loc>
-    <lastmod>2016-11-05T20:22:08+05:30</lastmod>
+    <loc>http://jonathan-kelley.com/portfolio/catalyst/</loc>
+    <lastmod>2020-01-05T19:41:01+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://jonathan-kelley.com/portfolio/work11/</loc>
-    <lastmod>2016-11-05T20:23:59+05:30</lastmod>
+    <loc>http://jonathan-kelley.com/portfolio/first/</loc>
+    <lastmod>2020-01-05T19:41:01+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jonathan-kelley.com/portfolio/unimolders/</loc>
+    <lastmod>2020-01-05T19:41:01+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jonathan-kelley.com/portfolio/veriloggpu/</loc>
+    <lastmod>2020-01-05T19:41:01+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jonathan-kelley.com/portfolio/threadsapp/</loc>
+    <lastmod>2020-01-05T19:41:01+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jonathan-kelley.com/portfolio/beam/</loc>
+    <lastmod>2020-01-05T19:41:01+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jonathan-kelley.com/portfolio/pdes/</loc>
+    <lastmod>2020-01-05T19:41:01+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jonathan-kelley.com/portfolio/shadowboxing/</loc>
+    <lastmod>2020-01-05T19:41:01+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jonathan-kelley.com/portfolio/barbour/</loc>
+    <lastmod>2020-01-05T19:41:01+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jonathan-kelley.com/portfolio/zero/</loc>
+    <lastmod>2020-01-05T19:41:01+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jonathan-kelley.com/portfolio/himcim/</loc>
+    <lastmod>2020-01-05T19:41:01+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jonathan-kelley.com/portfolio/verilogcpu/</loc>
+    <lastmod>2020-01-05T19:41:01+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jonathan-kelley.com/portfolio/blackholear/</loc>
+    <lastmod>2020-01-05T19:41:01+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jonathan-kelley.com/portfolio/discrete/</loc>
+    <lastmod>2020-01-05T19:41:01+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jonathan-kelley.com/portfolio/audio/</loc>
+    <lastmod>2020-01-05T19:41:01+05:30</lastmod>
   </url>
   
   <url>
@@ -58,29 +122,14 @@
   </url>
   
   <url>
-    <loc>http://jonathan-kelley.com/portfolio/work1_himcm/</loc>
-    <lastmod>2016-11-05T18:25:22+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jonathan-kelley.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://jonathan-kelley.com/</loc>
-    <lastmod>2016-11-05T19:41:01+05:30</lastmod>
+    <lastmod>2020-01-05T19:41:01+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://jonathan-kelley.com/portfolio/</loc>
-    <lastmod>2016-11-05T19:41:01+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://jonathan-kelley.com/tags/</loc>
+    <lastmod>2020-01-05T19:41:01+05:30</lastmod>
     <priority>0</priority>
   </url>
   

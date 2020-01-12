@@ -2,102 +2,162 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jonathan Kelley</title>
-    <link>http://jonathan-kelley.com/</link>
+    <link>http://jonathan-kelley.com/index.xml</link>
     <description>Recent content on Jonathan Kelley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Nov 2016 19:41:01 +0530</lastBuildDate>
-    
-	<atom:link href="http://jonathan-kelley.com/index.xml" rel="self" type="application/rss+xml" />
-    
+    <copyright>&amp;copy;2019 Jonathan Kelley</copyright>
+    <lastBuildDate>Sun, 05 Jan 2020 19:41:01 +0530</lastBuildDate>
+    <atom:link href="http://jonathan-kelley.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>LEAF Systems: Collaborative Multilateration</title>
-      <link>http://jonathan-kelley.com/portfolio/work2_multilateration/</link>
-      <pubDate>Sat, 05 Nov 2016 19:41:01 +0530</pubDate>
+      <title>Hash</title>
+      <link>http://jonathan-kelley.com/portfolio/hash/</link>
+      <pubDate>Sun, 05 Jan 2020 19:41:01 +0530</pubDate>
       
-      <guid>http://jonathan-kelley.com/portfolio/work2_multilateration/</guid>
-      <description>&lt;p&gt;I developed an graph-theory based algorithm that used inductive graph reasoning&lt;/p&gt;
-
-&lt;p&gt;When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.&lt;/p&gt;</description>
+      <guid>http://jonathan-kelley.com/portfolio/hash/</guid>
+      <description>&lt;p&gt;Engineering the next-generation business simulation platform&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>Computational Nuclear Fusion Research</title>
-      <link>http://jonathan-kelley.com/portfolio/work3/</link>
-      <pubDate>Sat, 05 Nov 2016 19:44:32 +0530</pubDate>
+      <title>Quartz</title>
+      <link>http://jonathan-kelley.com/portfolio/quartz/</link>
+      <pubDate>Sun, 05 Jan 2020 19:41:01 +0530</pubDate>
       
-      <guid>http://jonathan-kelley.com/portfolio/work3/</guid>
-      <description>&lt;p&gt;Super-computing boosted trajectory modeling of electrons in biconic cusp magnetic confinement.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;SKILLS:&lt;/strong&gt; OpenCL, OpenMP, Python, Genetic Algorithms, Electrodynamics&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;AWARDS:&lt;/strong&gt; Published in Broadstreet Scientific, NCSEF Winner, Yale Science Award&lt;/p&gt;</description>
+      <guid>http://jonathan-kelley.com/portfolio/quartz/</guid>
+      <description>&lt;p&gt;Built cameras, sensors, and software for big construction&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>FIRST Robotics</title>
-      <link>http://jonathan-kelley.com/portfolio/first-robotics/</link>
-      <pubDate>Sat, 05 Nov 2016 19:53:42 +0530</pubDate>
+      <title>leaf systems</title>
+      <link>http://jonathan-kelley.com/portfolio/leaf/</link>
+      <pubDate>Sun, 05 Jan 2020 19:41:01 +0530</pubDate>
       
-      <guid>http://jonathan-kelley.com/portfolio/first-robotics/</guid>
-      <description>&lt;p&gt;Visionary! Founder, lead designer, and director of &lt;a href=&#34;https://www.thebluealliance.com/team/5511/history&#34;&gt;Cortechs Robotics FRC 5511.&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Love robotics!&lt;/p&gt;</description>
+      <guid>http://jonathan-kelley.com/portfolio/leaf/</guid>
+      <description>&lt;p&gt;Developing a real time positioning system for important assets&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>Zero Gravity Injection Molding for ISS</title>
-      <link>http://jonathan-kelley.com/portfolio/work6/</link>
-      <pubDate>Sat, 05 Nov 2016 19:56:17 +0530</pubDate>
+      <title>fusion reactor</title>
+      <link>http://jonathan-kelley.com/portfolio/fusion/</link>
+      <pubDate>Sun, 05 Jan 2020 19:41:01 +0530</pubDate>
       
-      <guid>http://jonathan-kelley.com/portfolio/work6/</guid>
-      <description>&lt;p&gt;Fifth abundantly made Give sixth hath. Cattle creature i be don&amp;rsquo;t them.&lt;/p&gt;</description>
+      <guid>http://jonathan-kelley.com/portfolio/fusion/</guid>
+      <description>&lt;p&gt;Built an inertial electrostatic confinement fusion reactor&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>Name of the work 8</title>
-      <link>http://jonathan-kelley.com/portfolio/work8/</link>
-      <pubDate>Sat, 05 Nov 2016 19:59:22 +0530</pubDate>
+      <title>Conrad Challenge</title>
+      <link>http://jonathan-kelley.com/portfolio/conrad/</link>
+      <pubDate>Sun, 05 Jan 2020 19:41:01 +0530</pubDate>
       
-      <guid>http://jonathan-kelley.com/portfolio/work8/</guid>
-      <description>&lt;p&gt;Fifth abundantly made Give sixth hath. Cattle creature i be don&amp;rsquo;t them.&lt;/p&gt;</description>
+      <guid>http://jonathan-kelley.com/portfolio/conrad/</guid>
+      <description>&lt;p&gt;Leading teams of alumni for the student entrepreneur&amp;rsquo;s #1 resource&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>Item with image</title>
-      <link>http://jonathan-kelley.com/portfolio/work9/</link>
-      <pubDate>Sat, 05 Nov 2016 20:02:19 +0530</pubDate>
+      <title>Spatial Lab</title>
+      <link>http://jonathan-kelley.com/portfolio/spatial/</link>
+      <pubDate>Sun, 05 Jan 2020 19:41:01 +0530</pubDate>
       
-      <guid>http://jonathan-kelley.com/portfolio/work9/</guid>
-      <description>&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.&lt;/p&gt;</description>
+      <guid>http://jonathan-kelley.com/portfolio/spatial/</guid>
+      <description>&lt;p&gt;Developing better algorithms for augmented reality&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>Item with image</title>
-      <link>http://jonathan-kelley.com/portfolio/work10/</link>
-      <pubDate>Sat, 05 Nov 2016 20:22:08 +0530</pubDate>
+      <title>Catalyst</title>
+      <link>http://jonathan-kelley.com/portfolio/catalyst/</link>
+      <pubDate>Sun, 05 Jan 2020 19:41:01 +0530</pubDate>
       
-      <guid>http://jonathan-kelley.com/portfolio/work10/</guid>
-      <description>&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.&lt;/p&gt;</description>
+      <guid>http://jonathan-kelley.com/portfolio/catalyst/</guid>
+      <description>&lt;p&gt;Leading Olin&amp;rsquo;s entrepreneurial community and startup incubator&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>Item with image</title>
-      <link>http://jonathan-kelley.com/portfolio/work11/</link>
-      <pubDate>Sat, 05 Nov 2016 20:23:59 +0530</pubDate>
+      <title>first robotics</title>
+      <link>http://jonathan-kelley.com/portfolio/first/</link>
+      <pubDate>Sun, 05 Jan 2020 19:41:01 +0530</pubDate>
       
-      <guid>http://jonathan-kelley.com/portfolio/work11/</guid>
-      <description>&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.&lt;/p&gt;</description>
+      <guid>http://jonathan-kelley.com/portfolio/first/</guid>
+      <description>&lt;p&gt;Founded and led a world-class FIRST Robotics Team (#5511)&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>HiMCM Intel Shooting Star Drone Algorithm</title>
-      <link>http://jonathan-kelley.com/portfolio/work1_himcm/</link>
-      <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
+      <title>unimolders</title>
+      <link>http://jonathan-kelley.com/portfolio/unimolders/</link>
+      <pubDate>Sun, 05 Jan 2020 19:41:01 +0530</pubDate>
       
-      <guid>http://jonathan-kelley.com/portfolio/work1_himcm/</guid>
-      <description>&lt;p&gt;HIMCIM&lt;/p&gt;</description>
+      <guid>http://jonathan-kelley.com/portfolio/unimolders/</guid>
+      <description>&lt;p&gt;Launched a zero-gravity injection molding system to the ISS&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Verilog GPU</title>
+      <link>http://jonathan-kelley.com/portfolio/veriloggpu/</link>
+      <pubDate>Sun, 05 Jan 2020 19:41:01 +0530</pubDate>
+      
+      <guid>http://jonathan-kelley.com/portfolio/veriloggpu/</guid>
+      <description>&lt;p&gt;A GPU written in Verilog HDL with a hardware scheduler and compute cores&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ThreadsApp</title>
+      <link>http://jonathan-kelley.com/portfolio/threadsapp/</link>
+      <pubDate>Sun, 05 Jan 2020 19:41:01 +0530</pubDate>
+      
+      <guid>http://jonathan-kelley.com/portfolio/threadsapp/</guid>
+      <description>&lt;p&gt;Search engine for dresses complete with principal component analysis and pose estimation&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Beam Print</title>
+      <link>http://jonathan-kelley.com/portfolio/beam/</link>
+      <pubDate>Sun, 05 Jan 2020 19:41:01 +0530</pubDate>
+      
+      <guid>http://jonathan-kelley.com/portfolio/beam/</guid>
+      <description>&lt;p&gt;Suite of Augmented Reality tools designed for engineering and manufacturing&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Visualzing Schroedingers Equation</title>
+      <link>http://jonathan-kelley.com/portfolio/pdes/</link>
+      <pubDate>Sun, 05 Jan 2020 19:41:01 +0530</pubDate>
+      
+      <guid>http://jonathan-kelley.com/portfolio/pdes/</guid>
+      <description>&lt;p&gt;Solved and simulated the wave function for the hydrogen atom&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Shadowboxing robot</title>
+      <link>http://jonathan-kelley.com/portfolio/shadowboxing/</link>
+      <pubDate>Sun, 05 Jan 2020 19:41:01 +0530</pubDate>
+      
+      <guid>http://jonathan-kelley.com/portfolio/shadowboxing/</guid>
+      <description>&lt;p&gt;A kinect-powered 8-DoF robot that mimmics your every move&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Barbour Machine</title>
+      <link>http://jonathan-kelley.com/portfolio/barbour/</link>
+      <pubDate>Sun, 05 Jan 2020 19:41:01 +0530</pubDate>
+      
+      <guid>http://jonathan-kelley.com/portfolio/barbour/</guid>
+      <description>&lt;p&gt;Worked as a manufacturing consultant for local product development firms&lt;/p&gt;
+</description>
     </item>
     
   </channel>

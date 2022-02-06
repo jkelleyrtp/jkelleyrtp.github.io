@@ -7,6 +7,21 @@ pub fn PortfolioPost(cx: Scope) -> Element {
     })
 }
 
+static CONTENT: &[ContentItem] = &[
+    ContentItem {
+        archetype: "portfolio",
+    },
+    ContentItem {
+        archetype: "portfolio",
+    },
+    ContentItem {
+        archetype: "portfolio",
+    },
+    ContentItem {
+        archetype: "portfolio",
+    },
+];
+
 pub fn PortfolioList(cx: Scope) -> Element {
     cx.render(rsx! {
         ContentList {
@@ -18,17 +33,13 @@ pub fn PortfolioList(cx: Scope) -> Element {
                     h2 { class: "mt-2 mb-4 text-3xl leading-tight md:text-4xl md:leading-tight lg:text-3xl lg:leading-tight font-bold font-heading",
                         "Showcase of work, projects, teams, and work"
                     }
-                    p { class: "text-base leading-relaxed lg:text-l lg:leading-relaxed text-gray-500",
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa nibh, pulvinar vitae aliquet nec, accumsan aliquet orci."
+                    p { class: "text-base leading-relaxed lg:text-l lg:leading-relaxed text-gray-500 italic",
+                        "\"Motivation is a fire from within. If someone else tries to light that fire under you, chances are it will burn very briefly.\""
+                        em { class: "font-bold", " - Stephen R. Covey" }
                     }
                 }
             }),
-            content: &[
-                ContentItem {},
-                ContentItem {},
-                ContentItem {},
-                ContentItem {},
-            ]
+            content: CONTENT
         }
     })
 }

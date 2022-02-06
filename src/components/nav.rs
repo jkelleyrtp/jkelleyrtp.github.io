@@ -3,6 +3,39 @@ use dioxus::router::Link;
 
 static LINKS: &[&str] = &["Home", "Portfolio", "Blog", "Resume", "Contact"];
 
+fn LinkList(cx: Scope) -> Element {
+    cx.render(rsx! {
+        LINKS.iter().map(|link| {
+            let route = format!("/{}", link.to_lowercase());
+            rsx!{
+                li {
+                    Link {
+                        to: "{route}",
+                        class: "text-sm hover:text-indigo-700 font-medium",
+                        "{link}"
+                    }
+                }
+            }
+        })
+        li {
+            a {
+                href: "https://www.linkedin.com/in/jonathan-r-kelley",
+                target: "_blank",
+                class: "text-sm hover:text-indigo-700 font-medium",
+                icons::LinkedinLogo {}
+            }
+        }
+        li {
+            a {
+                href: "https://github.com/jkelleyrtp",
+                target: "_blank",
+                class: "text-sm hover:text-indigo-700 font-medium",
+                icons::GithubLogo {}
+            }
+        }
+    })
+}
+
 pub fn Navigation(cx: Scope) -> Element {
     cx.render(rsx!(
         nav { class: "py-8 bg-transparent",
@@ -43,39 +76,6 @@ pub fn Navigation(cx: Scope) -> Element {
             }
         }
     ))
-}
-
-fn LinkList(cx: Scope) -> Element {
-    cx.render(rsx! {
-        LINKS.iter().map(|link| {
-            let route = format!("/{}", link.to_lowercase());
-            rsx!{
-                li {
-                    Link {
-                        to: "{route}",
-                        class: "text-sm hover:text-indigo-700 font-medium",
-                        "{link}"
-                    }
-                }
-            }
-        })
-        li {
-            a {
-                href: "https://github.com/jkelleyrtp",
-                target: "_blank",
-                class: "text-sm hover:text-indigo-700 font-medium",
-                icons::GithubLogo {}
-            }
-        }
-        li {
-            a {
-                href: "https://www.linkedin.com/in/jonathan-r-kelley",
-                target: "_blank",
-                class: "text-sm hover:text-indigo-700 font-medium",
-                icons::LinkedinLogo {}
-            }
-        }
-    })
 }
 
 mod icons {
@@ -140,4 +140,21 @@ mod icons {
             }
         ))
     };
+
+    pub(super) fn EmailIcon(cx: Scope) -> Element {
+        cx.render(rsx!(
+            svg { class: "h-6 w-6",
+                xmlns: "http://www.w3.org/2000/svg",
+                fill: "currentColor",
+                view_box: "0 0 20 20",
+                stroke: "currentColor",
+                path {
+                    d: "M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z",
+                }
+                path {
+                    d: "M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z",
+                }
+            }
+        ))
+    }
 }

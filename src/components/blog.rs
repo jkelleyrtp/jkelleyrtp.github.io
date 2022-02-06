@@ -7,6 +7,13 @@ pub fn BlogPost(cx: Scope) -> Element {
     })
 }
 
+static CONTENT: &[ContentItem] = &[
+    ContentItem { archetype: "blog" },
+    ContentItem { archetype: "blog" },
+    ContentItem { archetype: "blog" },
+    ContentItem { archetype: "blog" },
+];
+
 pub fn BlogList(cx: Scope) -> Element {
     cx.render(rsx! {
         div {
@@ -19,17 +26,13 @@ pub fn BlogList(cx: Scope) -> Element {
                         h2 { class: "mt-2 mb-4 text-3xl leading-tight md:text-4xl md:leading-tight lg:text-3xl lg:leading-tight font-bold font-heading",
                             "Musings about Engineering, Science, and Life"
                         }
-                        p { class: "text-base leading-relaxed lg:text-l lg:leading-relaxed text-gray-500",
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa nibh, pulvinar vitae aliquet nec, accumsan aliquet orci."
+                        p { class: "text-base leading-relaxed lg:text-l lg:leading-relaxed text-gray-500 italic",
+                            "\"Never let the fear of striking out keep you from playing the game\""
+                            em { class: "font-bold", " - Babe Ruth" }
                         }
                     }
                 }),
-                content: &[
-                    ContentItem {},
-                    ContentItem {},
-                    ContentItem {},
-                    ContentItem {},
-                ]
+                content: CONTENT,
             }
         }
     })

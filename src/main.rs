@@ -6,6 +6,7 @@ pub use components::*;
 mod components {
     pub mod about;
     pub mod blog;
+    pub mod contact;
     pub mod content;
     pub mod home;
     pub mod nav;
@@ -28,7 +29,7 @@ fn app(cx: Scope) -> Element {
             Route { to: "/portfolio", portfolio::PortfolioList {} }
             Route { to: "/portfolio/:post", portfolio::PortfolioPost {} }
             Route { to: "/resume", resume::Resume {} }
-            Route { to: "/contact", "Contact" }
+            Route { to: "/contact", contact::Contact {} }
             Route { to: "", fallback: true, home::Home {} }
         }
     })

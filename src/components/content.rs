@@ -1,4 +1,4 @@
-use dioxus::prelude::*;
+use dioxus::{prelude::*, router::Link};
 
 #[derive(Props)]
 struct Content<'a> {
@@ -116,7 +116,9 @@ mod icons {
     }
 }
 
-pub struct ContentItem {}
+pub struct ContentItem {
+    pub archetype: &'static str,
+}
 
 #[inline_props]
 pub fn ContentList<'a>(cx: Scope<'a>, header: Element<'a>, content: &'a [ContentItem]) -> Element {
@@ -155,14 +157,11 @@ fn RenderContentItem<'a>(cx: Scope<'a>, item: &'a ContentItem) -> Element<'a> {
                     p { class: "mb-4 text-m text-gray-500 leading-loose",
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa nibh, pulvinar vitae aliquet nec, accumsan aliquet orci."
                     }
-                    a { class: "flex items-center text-m font-bold text-indigo-500 hover:text-indigo-700",
-                        href: "#",
-                        span {
-                            "Read more"
-                        }
-                        span {
-                            icons::icon_0 {}
-                        }
+                    Link {
+                        to: "/{item.archetype}/post",
+                        class: "flex items-center text-m font-bold text-indigo-500 hover:text-indigo-700"
+                        span { "Read more" }
+                        span { icons::icon_0 {} }
                     }
                 }
             }

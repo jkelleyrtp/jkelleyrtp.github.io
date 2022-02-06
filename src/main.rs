@@ -12,11 +12,13 @@ fn app(cx: Scope) -> Element {
         Router {
             nav::Navigation {}
             Route { to: "/home", home::Home {} }
-            Route { to: "/about", "about" }
+            Route { to: "/blog", "blog" }
+            Route { to: "/blog/:post", "blog" }
             Route { to: "/portfolio", "portfolio" }
             Route { to: "/portfolio/:post", "portfolio" }
             Route { to: "/about", "about" }
             Route { to: "/resume", "resume" }
+            Route { to: "", fallback: true, home::Home {} }
         }
     })
 }

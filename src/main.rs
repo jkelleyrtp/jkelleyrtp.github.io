@@ -1,3 +1,13 @@
+use dioxus::prelude::*;
+
 fn main() {
-    println!("Hello, world!");
+    dioxus::web::launch(app);
+}
+
+fn app(cx: Scope) -> Element {
+    cx.render(rsx! {
+        div {
+            "hello jon's site from dioxus"
+        }
+    })
 }

@@ -25,15 +25,22 @@ pub fn Home(cx: Scope) -> Element {
                             }
                         }
                         li {
+                            "Partner at student-led venture capital firm "
+                            a { href: "https://www.248builders.vc", class: "font-bold text-blue-600", target: "_blank",
+                                "248 Builders"
+                            }
+                        }
+                        // todo: re-enable when we have a website for leaf
+                        // li {
+                        //     "Solving asset management for manufacturing at "
+                        //     a { href: "http://olin.edu", class: "font-bold text-blue-600", target: "_blank",
+                        //         "Leaf Systems"
+                        //     }
+                        // }
+                        li {
                             "Previously fullstack Rust and TypeScript engineer at "
                             a { href: "http://hash.ai", class: "font-bold text-blue-600", target: "_blank",
                                 "HASH.ai"
-                            }
-                        }
-                        li {
-                            "Solving asset management for manufacturing at "
-                            a { href: "http://olin.edu", class: "font-bold text-blue-600", target: "_blank",
-                                "Leaf Systems"
                             }
                         }
                         li {

@@ -1,6 +1,6 @@
 +++
 date = "2016-11-05T19:53:42+05:30"
-image = "img/portfolio/robot2018.jpg"
+image = "images/portfolio/robot2018.jpg"
 showonlyimage = false
 title = "FIRST Robotics"
 weight = 5

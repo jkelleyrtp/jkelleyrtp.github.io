@@ -1,18 +1,23 @@
 use dioxus::prelude::*;
 use dioxus::router::Link;
 
-static LINKS: &[&str] = &["Home", "Portfolio", "Blog", "Resume", "Contact"];
+static LINKS: &[(&str, &str)] = &[
+    ("Home", "home"),
+    ("Portfolio", "portfolio"),
+    ("Blog", "blog"),
+    ("Résumé", "resume"),
+    ("Contact", "contact"),
+];
 
 fn LinkList(cx: Scope) -> Element {
     cx.render(rsx! {
-        LINKS.iter().map(|link| {
-            let route = format!("/{}", link.to_lowercase());
+        LINKS.iter().map(|(name, route)| {
             rsx!{
                 li {
                     Link {
                         to: "{route}",
                         class: "text-sm hover:text-indigo-700 font-medium",
-                        "{link}"
+                        "{name}"
                     }
                 }
             }

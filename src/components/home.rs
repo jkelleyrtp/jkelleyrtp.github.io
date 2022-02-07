@@ -11,7 +11,7 @@ pub fn Home(cx: Scope) -> Element {
                     p { class: "mb-4 text-base leading-relaxed lg:text-xl lg:leading-relaxed text-gray-500",
                         "Systems Engineer passionate about data, IoT, Rust, and the future of automation."
                     }
-                    ul { class: "list-disc text-left pl-20 mb-4 text-gray-500",
+                    ul { class: "list-disc text-left pl-4 lg:pl-20 mb-4 text-gray-500",
                         li {
                             "Senior in EE+CS at "
                             a { href: "http://olin.edu", class: "font-bold text-blue-600", target: "_blank",
@@ -60,7 +60,7 @@ pub fn Home(cx: Scope) -> Element {
                         }
                     }
                     img { class: "mx-auto object-cover rounded-lg",
-                        src: "static/img/profile_photo.jpg",
+                        src: "static/images/profile_photo.jpg",
                         alt: "",
                     }
                 }

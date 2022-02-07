@@ -1,6 +1,6 @@
 +++
 date = "2020-01-05T19:41:01+05:30"
-image = "images/portfolio/shop.jpg"
+image = "static/images/portfolio/shop.jpg"
 showonlyimage = false
 title = "shop manager"
 weight = 11

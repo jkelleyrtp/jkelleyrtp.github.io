@@ -1,6 +1,6 @@
 +++
 date = "2020-01-05T19:41:01+05:30"
-image = "images/portfolio/veriloggpu.jpg"
+image = "static/images/portfolio/veriloggpu.jpg"
 showonlyimage = false
 title = "Verilog GPU"
 weight = 10

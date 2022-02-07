@@ -1,6 +1,6 @@
 +++
 date = "2020-01-05T19:41:01+05:30"
-image = "images/portfolio/leaf.jpg"
+image = "static/images/portfolio/leaf.jpg"
 showonlyimage = false
 title = "leaf systems"
 weight = 3

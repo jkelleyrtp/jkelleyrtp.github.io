@@ -1,6 +1,6 @@
 +++
 date = "2020-01-05T19:41:01+05:30"
-image = "images/portfolio/conrad.jpg"
+image = "static/images/portfolio/conrad.jpg"
 showonlyimage = false
 title = "Conrad Challenge"
 weight = 5

@@ -1,6 +1,6 @@
 +++
 date = "2020-01-05T19:41:01+05:30"
-image = "images/portfolio/audio.jpg"
+image = "static/images/portfolio/audio.jpg"
 showonlyimage = false
 title = "Audio Steganography"
 weight = 21

@@ -1,6 +1,6 @@
 +++
 date = "2020-01-05T19:41:01+05:30"
-image = "images/portfolio/pdes.jpg"
+image = "static/images/portfolio/pdes.jpg"
 showonlyimage = false
 title = "Visualzing Schroedingers Equation"
 weight = 13

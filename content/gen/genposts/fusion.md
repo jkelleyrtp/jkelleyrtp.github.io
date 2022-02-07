@@ -1,6 +1,6 @@
 +++
 date = "2020-01-05T19:41:01+05:30"
-image = "images/portfolio/fusion.jpg"
+image = "static/images/portfolio/fusion.jpg"
 showonlyimage = false
 title = "fusion reactor"
 weight = 4

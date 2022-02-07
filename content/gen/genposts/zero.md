@@ -1,6 +1,6 @@
 +++
 date = "2020-01-05T19:41:01+05:30"
-image = "images/portfolio/zero.jpg"
+image = "static/images/portfolio/zero.jpg"
 showonlyimage = false
 title = "zero robotics"
 weight = 16

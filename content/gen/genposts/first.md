@@ -1,6 +1,6 @@
 +++
 date = "2020-01-05T19:41:01+05:30"
-image = "images/portfolio/first.jpg"
+image = "static/images/portfolio/first.jpg"
 showonlyimage = false
 title = "first robotics"
 weight = 8

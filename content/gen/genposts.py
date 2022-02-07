@@ -63,7 +63,7 @@ for post_name, post_text, file_name in topics:
         a=(
 '''+++
 date = "2020-01-05T19:41:01+05:30"
-image = "images/portfolio/{0}.jpg"
+image = "static/images/portfolio/{0}.jpg"
 showonlyimage = false
 title = "{1}"
 weight = {2}

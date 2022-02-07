@@ -1,18 +1,19 @@
-use crate::content::{ContentItem, ContentList, ContentPost};
+use crate::blog_content::BLOG_POSTS;
+use crate::content::{ContentList, ContentPost};
 use dioxus::prelude::*;
 
 pub fn BlogPost(cx: Scope) -> Element {
+    let id: String = dioxus::router::use_route(&cx)
+        .segment("post")
+        .unwrap()
+        .unwrap();
+
     cx.render(rsx! {
-        ContentPost {}
+        ContentPost {
+            post: BLOG_POSTS.iter().find(|p| p.title == id).unwrap(),
+        }
     })
 }
-
-static CONTENT: &[ContentItem] = &[
-    ContentItem { archetype: "blog" },
-    ContentItem { archetype: "blog" },
-    ContentItem { archetype: "blog" },
-    ContentItem { archetype: "blog" },
-];
 
 pub fn BlogList(cx: Scope) -> Element {
     cx.render(rsx! {
@@ -32,7 +33,8 @@ pub fn BlogList(cx: Scope) -> Element {
                         }
                     }
                 }),
-                content: CONTENT,
+                content: &BLOG_POSTS,
+                readmore: true
             }
         }
     })

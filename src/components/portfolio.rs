@@ -1,26 +1,19 @@
-use crate::content::{ContentItem, ContentList, ContentPost};
+use crate::blog_content::PORTFOLIO_ENTRIES;
+use crate::content::{ContentList, ContentPost};
 use dioxus::prelude::*;
 
 pub fn PortfolioPost(cx: Scope) -> Element {
+    let id: String = dioxus::router::use_route(&cx)
+        .segment("post")
+        .unwrap()
+        .unwrap();
+
     cx.render(rsx! {
-        ContentPost {}
+        ContentPost {
+            post: PORTFOLIO_ENTRIES.iter().find(|p| p.title == id).unwrap(),
+        }
     })
 }
-
-static CONTENT: &[ContentItem] = &[
-    ContentItem {
-        archetype: "portfolio",
-    },
-    ContentItem {
-        archetype: "portfolio",
-    },
-    ContentItem {
-        archetype: "portfolio",
-    },
-    ContentItem {
-        archetype: "portfolio",
-    },
-];
 
 pub fn PortfolioList(cx: Scope) -> Element {
     cx.render(rsx! {
@@ -39,7 +32,8 @@ pub fn PortfolioList(cx: Scope) -> Element {
                     }
                 }
             }),
-            content: CONTENT
+            content: &PORTFOLIO_ENTRIES,
+            readmore: false
         }
     })
 }

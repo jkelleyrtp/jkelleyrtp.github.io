@@ -8,9 +8,9 @@ pub struct ContentEntry {
     pub image: &'static str,
     pub description: &'static str,
     pub content: &'static str, // won't get generated until requested at the blog post level
-    pub weight: u8,
     pub archetype: &'static str,
     pub slug: &'static str,
+    pub weight: u8,
 }
 
 pub static BLOG_POSTS: Lazy<Vec<ContentEntry>> = Lazy::new(|| {

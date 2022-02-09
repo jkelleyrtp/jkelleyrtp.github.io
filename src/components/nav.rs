@@ -42,45 +42,66 @@ fn LinkList(cx: Scope) -> Element {
 }
 
 pub fn Navigation(cx: Scope) -> Element {
+    let (_, set_show) = use_state(&cx, || false);
     cx.render(rsx!(
         nav { class: "py-8 bg-transparent",
-            div { class: "container px-4 mx-auto",
-                div { class: "flex justify-between items-center",
-                    Link {
-                        to: "/home",
-                        class: "text-gray-600 text-2xl leading-none",
-                        "Jonathan Kelley"
-                    }
-                    div { class: "lg:hidden",
-                        button { class: "block navbar-burger text-indigo-500 hover:text-indigo-700 focus:outline-none",
-                            icons::icon_0 {}
-                        }
-                    }
-                    ul { class: "hidden lg:flex ml-auto mr-10 items-center w-auto space-x-12",
-                        LinkList {}
+            MobileNav { set_show: set_show }
+            FullNav { set_show: set_show }
+        }
+    ))
+}
+
+#[inline_props]
+fn MobileNav<'a>(cx: Scope, set_show: &'a UseState<bool>) -> Element {
+    cx.render(rsx!{
+        div { class: "container px-4 mx-auto",
+            div { class: "flex justify-between items-center",
+                Link {
+                    to: "/home",
+                    class: "text-gray-600 text-2xl leading-none",
+                    "Jonathan Kelley"
+                }
+                div { class: "lg:hidden",
+                    button { class: "block navbar-burger text-indigo-500 hover:text-indigo-700 focus:outline-none",
+                        onclick: move |_| set_show.modify(|f| !f),
+                        icons::icon_1 {}
                     }
                 }
-            }
-
-            div { class: "hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50",
-                div { class: "navbar-backdrop fixed inset-0 bg-gray-800 opacity-25", }
-                nav { class: "relative flex flex-col py-6 px-6 w-full h-full bg-white border-r overflow-y-auto",
-                    div { class: "flex items-center mb-12",
-                        a { class: "mr-auto text-2xl font-semibold leading-none",
-                            href: "#",
-                            img { class: "h-8",
-                                width: "auto",
-                                src: "plain-assets/logos/plain-indigo.svg",
-                                alt: "",
-                            }
-                        }
-                        button { class: "navbar-close", icons::icon_1 {} }
-                    }
-                    div { ul { LinkList {} } }
+                ul { class: "hidden lg:flex ml-auto mr-10 items-center w-auto space-x-12",
+                    LinkList {}
                 }
             }
         }
-    ))
+    })
+}
+
+#[inline_props]
+fn FullNav<'a>(cx: Scope, set_show: &'a UseState<bool>) -> Element {
+    let show = if **set_show.get() { "" } else { "hidden" };
+
+    cx.render(rsx!{
+        div { class: "{show} navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50",
+            div { class: "navbar-backdrop fixed inset-0 bg-gray-800 opacity-25", }
+            nav { class: "relative flex flex-col py-6 px-6 w-full h-full bg-white border-r overflow-y-auto",
+                div { class: "flex items-center mb-12",
+                    a { class: "mr-auto text-2xl font-semibold leading-none",
+                        href: "#",
+                        img { class: "h-8",
+                            width: "auto",
+                            src: "plain-assets/logos/plain-indigo.svg",
+                            alt: "",
+                        }
+                    }
+                    button {
+                        class: "navbar-close",
+                        onclick: move |_| set_show.modify(|f| !f),
+                        icons::icon_0 {}
+                    }
+                }
+                div { ul { LinkList {} } }
+            }
+        }
+    })
 }
 
 mod icons {

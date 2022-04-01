@@ -31,16 +31,22 @@ pub fn Home(cx: Scope) -> Element {
                             }
                         }
                         // todo: re-enable when we have a website for leaf
-                        // li {
-                        //     "Solving asset management for manufacturing at "
-                        //     a { href: "http://olin.edu", class: "font-bold text-blue-600", target: "_blank",
-                        //         "Leaf Systems"
-                        //     }
-                        // }
+                        li {
+                            "Solving asset management for manufacturing at "
+                            a { href: "https://leafsystems.io", class: "font-bold text-blue-600", target: "_blank",
+                                "Leaf Systems"
+                            }
+                        }
                         li {
                             "Previously fullstack Rust and TypeScript engineer at "
                             a { href: "http://hash.ai", class: "font-bold text-blue-600", target: "_blank",
                                 "HASH.ai"
+                            }
+                        }
+                        li {
+                            "Passionate about wirless communications and "
+                            a { href: "http://github.com/jkelleyrtp/ofdm", class: "font-bold text-blue-600", target: "_blank",
+                                "implemented WiFi from scratch"
                             }
                         }
                         li {

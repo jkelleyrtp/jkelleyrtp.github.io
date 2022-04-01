@@ -32,7 +32,7 @@ fn app(cx: Scope) -> Element {
             Route { to: "/portfolio/:post", portfolio::PortfolioPost {} }
             Route { to: "/resume", resume::Resume {} }
             Route { to: "/contact", contact::Contact {} }
-            Route { to: "", fallback: true, home::Home {} }
+            Route { to: "", home::Home {} }
         }
     })
 }

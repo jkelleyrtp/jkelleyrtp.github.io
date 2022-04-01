@@ -42,17 +42,17 @@ fn LinkList(cx: Scope) -> Element {
 }
 
 pub fn Navigation(cx: Scope) -> Element {
-    let (_, set_show) = use_state(&cx, || false);
+    let show = use_state(&cx, || false);
     cx.render(rsx!(
         nav { class: "py-8 bg-transparent",
-            MobileNav { set_show: set_show }
-            FullNav { set_show: set_show }
+            MobileNav { show: show }
+            FullNav { show: show }
         }
     ))
 }
 
 #[inline_props]
-fn MobileNav<'a>(cx: Scope, set_show: &'a UseState<bool>) -> Element {
+fn MobileNav<'a>(cx: Scope, show: &'a UseState<bool>) -> Element {
     cx.render(rsx!{
         div { class: "container px-4 mx-auto",
             div { class: "flex justify-between items-center",
@@ -63,7 +63,7 @@ fn MobileNav<'a>(cx: Scope, set_show: &'a UseState<bool>) -> Element {
                 }
                 div { class: "lg:hidden",
                     button { class: "block navbar-burger text-indigo-500 hover:text-indigo-700 focus:outline-none",
-                        onclick: move |_| set_show.modify(|f| !f),
+                        onclick: move |_| show.modify(|f| !f),
                         icons::icon_1 {}
                     }
                 }
@@ -76,11 +76,11 @@ fn MobileNav<'a>(cx: Scope, set_show: &'a UseState<bool>) -> Element {
 }
 
 #[inline_props]
-fn FullNav<'a>(cx: Scope, set_show: &'a UseState<bool>) -> Element {
-    let show = if **set_show.get() { "" } else { "hidden" };
+fn FullNav<'a>(cx: Scope, show: &'a UseState<bool>) -> Element {
+    let show_class = if *show.get() { "" } else { "hidden" };
 
     cx.render(rsx!{
-        div { class: "{show} navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50",
+        div { class: "{show_class} navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50",
             div { class: "navbar-backdrop fixed inset-0 bg-gray-800 opacity-25", }
             nav { class: "relative flex flex-col py-6 px-6 w-full h-full bg-white border-r overflow-y-auto",
                 div { class: "flex items-center mb-12",
@@ -94,7 +94,7 @@ fn FullNav<'a>(cx: Scope, set_show: &'a UseState<bool>) -> Element {
                     }
                     button {
                         class: "navbar-close",
-                        onclick: move |_| set_show.modify(|f| !f),
+                        onclick: move |_| show.modify(|f| !f),
                         icons::icon_0 {}
                     }
                 }

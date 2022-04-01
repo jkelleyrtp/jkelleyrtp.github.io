@@ -3,7 +3,7 @@ use dioxus::{prelude::*, router::Link};
 use crate::blog_content::ContentEntry;
 
 #[inline_props]
-pub fn ContentPost(cx: Scope, post: &'static ContentEntry) -> Element {
+pub(crate) fn ContentPost(cx: Scope, post: &'static ContentEntry) -> Element {
     cx.render(rsx!(
         section { class: "py-20",
             div { class: "container px-4 mx-auto mb-16",
@@ -107,38 +107,49 @@ fn ContentPreview<'a>(cx: Scope<'a>, item: &'a ContentEntry, readmore: bool) -> 
         content,
         weight,
         slug,
+        link,
         ..
     } = *item;
 
+    let link = link.unwrap_or("");
+
+    let content =
+        cx.use_hook(|_| comrak::markdown_to_html(content, &comrak::ComrakOptions::default()));
+
     cx.render(rsx!(
-        div { class: "w-full px-4 lg:px-32 mb-12 lg:mb-16",
-            div { class: "flex flex-wrap -mx-4",
-                div { class: "w-full lg:w-1/3 px-4 mb-6 lg:mb-0",
-                    div { class: "h-80 lg:h-40",
-                        img { class: "w-full h-full object-cover rounded-lg",
-                            alt: "{description}",
-                            src: "{image}",
+        div { class: "w-full px-4 lg:px-16 mb-12 lg:mb-16",
+            Link { to: "{link}",
+                div { class: "flex flex-wrap -mx-4",
+                    div { class: "w-full lg:w-1/3 px-4 mb-6 lg:mb-0",
+                        div { class: "h-80 lg:h-40",
+                            img { class: "w-full object-cover rounded-lg",
+                                alt: "{description}",
+                                src: "{image}",
+                            }
                         }
                     }
-                }
-                div { class: "w-full lg:w-2/3 px-4",
-                    span { class: "text-xs font-bold text-indigo-500",
-                        "{date}"
-                    }
-                    h2 { class: "mt-2 mb-2 text-1xl font-bold font-heading",
-                        "{title}"
-                    }
-                    p { class: "mb-4 text-m text-gray-500 leading-loose",
-                        "{description}"
-                    }
-                    readmore.then(|| rsx!{
-                        Link {
-                            to: "/{item.archetype}/{slug}",
-                            class: "flex items-center text-m font-bold text-indigo-500 hover:text-indigo-700"
-                            span { "Read more" }
-                            span { icons::icon_0 {} }
+                    div { class: "w-full lg:w-2/3 px-4",
+                        // span { class: "text-xs font-bold text-indigo-500",
+                        //     "{date}"
+                        // }
+                        h2 { class: "mt-2 mb-2 text-2xl font-bold font-heading",
+                            "{title}"
                         }
-                    })
+                        // p { class: "mb-4 text-m text-gray-500 leading-loose",
+                        //     "{description}"
+                        // }
+                        p { class: "mb-4 text-m text-gray-500 leading-loose space-y-4",
+                            dangerous_inner_html: "{content}"
+                        }
+                        readmore.then(|| rsx!{
+                            Link {
+                                to: "/{item.archetype}/{slug}",
+                                class: "flex items-center text-m font-bold text-indigo-500 hover:text-indigo-700"
+                                span { "Read more" }
+                                span { icons::icon_0 {} }
+                            }
+                        })
+                    }
                 }
             }
         }

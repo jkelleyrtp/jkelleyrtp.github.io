@@ -1,3 +1,5 @@
+use std::str::Split;
+
 use include_dir::Dir;
 use once_cell::sync::Lazy;
 
@@ -10,6 +12,7 @@ pub struct ContentEntry {
     pub content: &'static str, // won't get generated until requested at the blog post level
     pub archetype: &'static str,
     pub slug: &'static str,
+    pub link: Option<&'static str>,
     pub weight: u8,
 }
 
@@ -28,18 +31,17 @@ fn parse_dir(dir: &'static Dir<'static>, archetype: &'static str) -> Vec<Content
         .files()
         .map(|file| {
             let buf = file.contents_utf8().unwrap();
-
             let mut split = buf.split("+++");
 
             let _ = split.next().unwrap();
             let head = split.next().unwrap();
+            let content = split.next().unwrap();
 
-            let content = split.next().unwrap().trim_matches('\n');
             let mut entry = ContentEntry {
                 archetype,
-                content,
                 slug: file.path().to_str().unwrap().trim_end_matches(".md"),
-                description: content.lines().next().unwrap(),
+                description: "",
+                content,
                 ..ContentEntry::default()
             };
 
@@ -51,6 +53,8 @@ fn parse_dir(dir: &'static Dir<'static>, archetype: &'static str) -> Vec<Content
                         "image" => entry.image = value.trim_matches('"'),
                         "title" => entry.title = value.trim_matches('"'),
                         "weight" => entry.weight = value.parse().unwrap(),
+                        "description" => entry.description = value.trim_matches('"'),
+                        "link" => entry.link = Some(value.trim_matches('"')),
                         "showonlyimage" => {}
                         "generatepage" => {}
                         _ => {}
@@ -61,7 +65,6 @@ fn parse_dir(dir: &'static Dir<'static>, archetype: &'static str) -> Vec<Content
         })
         .collect();
 
-    items.sort_by_key(|f| f.weight);
     items
 }
 

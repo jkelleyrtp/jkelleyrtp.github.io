@@ -27,8 +27,7 @@ pub static PORTFOLIO_ENTRIES: Lazy<Vec<ContentEntry>> = Lazy::new(|| {
 });
 
 fn parse_dir(dir: &'static Dir<'static>, archetype: &'static str) -> Vec<ContentEntry> {
-    let mut items: Vec<_> = dir
-        .files()
+    dir.files()
         .map(|file| {
             let buf = file.contents_utf8().unwrap();
             let mut split = buf.split("+++");
@@ -63,9 +62,7 @@ fn parse_dir(dir: &'static Dir<'static>, archetype: &'static str) -> Vec<Content
             }
             entry
         })
-        .collect();
-
-    items
+        .collect()
 }
 
 #[test]

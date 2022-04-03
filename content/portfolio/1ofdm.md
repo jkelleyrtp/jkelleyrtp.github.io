@@ -8,10 +8,8 @@ generatepage = false
 link = "https://github.com/jkelleyrtp/ofdm"
 +++
 
-I developed a new UI library for Rust that follows in the footsteps of React. It supports rendering on many platforms: web, desktop, mobile, TUI, LiveView, and more.
+I implemented WiFi from the ground up on an Ettus B210 USRP. My final implementation was capable of 1 MBit transmission with sub-millisecond latency.
 
-The library has gained over 3000⭐️ GitHub stars in under 2 months and has an active Discord community of over 300 members.
+To implement WiFi, I used the Rust programming language to convert arbitrary data streams (bytes) into a MIMO OFDM packet. Encoding and decoding of the packets was accelerated with the ArrayFire library for CUDA-based GPGPU and deployed onto two NVIDIA Jetson TK2s.
 
-Dioxus showcases my talents in writing low-level Rust code with manual memory management.
-
-**Skills**: custom futures, custom memory allocators, self-referential data-structures, procedural macros, and WebAssembly.
+The digital communications techniques I used included 64QAM for modulation, closed-loop frequency correction with the Shmidl-Cox algorithm, closed-loop phase offset correction, guardbands, colorspace compression, and live error correction with Hamming Codes.

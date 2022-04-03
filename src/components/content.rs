@@ -87,7 +87,7 @@ pub fn ContentList<'a>(
 ) -> Element {
     cx.render(rsx!(
         section { class: "py-20",
-            div { class: "container px-4 md:px-24 lg:px-48 mx-auto",
+            div { class: "container px-4 sm:px-12 lg:px-24 x-lg:px-48 mx-auto",
                 header,
                 div { class: "flex flex-wrap -mx-4",
                     content.iter().map(|item| rsx!{ ContentPreview { item: item, readmore: *readmore } })
@@ -121,8 +121,8 @@ fn ContentPreview<'a>(cx: Scope<'a>, item: &'a ContentEntry, readmore: bool) -> 
             Link { to: "{link}",
                 div { class: "flex flex-wrap -mx-4",
                     div { class: "w-full lg:w-1/3 px-4 mb-6 lg:mb-0",
-                        div { class: "h-80 lg:h-40",
-                            img { class: "w-full object-cover rounded-lg",
+                        div {
+                            img { class: "h-40 lg:h-80 object-contain rounded-lg",
                                 alt: "{description}",
                                 src: "{image}",
                             }

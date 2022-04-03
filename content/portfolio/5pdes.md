@@ -1,16 +1,15 @@
 +++
 date = "2020-01-05T19:41:01+05:30"
-image = "static/images/portfolio/pdes.jpg"
+image = "static/images/portfolio/pdes.png"
 showonlyimage = false
-title = "Visualzing Schroedingers Equation"
+title = "Visualizing Schroedinger's Equation"
 weight = 13
 generatepage = false
+link = "https://jonathankelley.notion.site/The-Hydrogen-Atom-From-PDE-to-Picture-3b19448c67c740c78fa23edb7988ea5a"
 +++
 
-I developed a new UI library for Rust that follows in the footsteps of React. It supports rendering on many platforms: web, desktop, mobile, TUI, LiveView, and more.
+For my final project in Partial Differential Equations, I solved Schroedinger's wave equation for electron densities around the hydrogen atom.
 
-The library has gained over 3000⭐️ GitHub stars in under 2 months and has an active Discord community of over 300 members.
+This particular project showcases deep mathematical understanding of multivariable calculus and partial differential equations.
 
-Dioxus showcases my talents in writing low-level Rust code with manual memory management.
-
-**Skills**: custom futures, custom memory allocators, self-referential data-structures, procedural macros, and WebAssembly.
+A brief overview of the paper is available here: __[From PDE to Picture](https://jonathankelley.notion.site/The-Hydrogen-Atom-From-PDE-to-Picture-3b19448c67c740c78fa23edb7988ea5a)__

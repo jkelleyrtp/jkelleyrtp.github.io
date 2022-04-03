@@ -2,16 +2,14 @@
 date = "2020-01-05T19:41:01+05:30"
 image = "static/images/portfolio/leaf_logo_tiny.png"
 showonlyimage = false
-title = "Position tracking for "
+title = "Position tracking for industrial automation"
 weight = 21
 generatepage = false
 link = "https://dioxuslabs.com"
 +++
 
-I developed a new UI library for Rust that follows in the footsteps of React. It supports rendering on many platforms: web, desktop, mobile, TUI, LiveView, and more.
+I co-founded a small company that built position tracking firmware and software for industrial automation using ultrawideband technology.
 
-The library has gained over 3000⭐️ GitHub stars in under 2 months and has an active Discord community of over 300 members.
+Our project collected many accolades including finalist for MIT’s Lemelson Student Prize, finalist for the MIT 100K Pitch competition, semifinalist for MIT 100K Accelerate, and acceptance into the MIT Fuse incubator program. In addition, we won the Conrad Spirit of Innovation Challenge and secured provisional patent and patent rights for our tracking technology.
 
-Dioxus showcases my talents in writing low-level Rust code with manual memory management.
-
-**Skills**: custom futures, custom memory allocators, self-referential data-structures, procedural macros, and WebAssembly.
+We raised nearly $20,000 through various pitch competitions and grant programs. For the company, I lead the technology development efforts: designing custom circuit boards, implementing a novel form of positioning (collaborative multilateration), and writing large portions of the firmware and cloud software stack in Python and Rust.

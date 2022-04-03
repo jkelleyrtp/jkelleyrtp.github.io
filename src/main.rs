@@ -15,7 +15,6 @@ mod components {
     pub mod resume;
 }
 pub mod blog_content;
-pub mod portfolio_content;
 
 fn main() {
     dioxus::web::launch(app);

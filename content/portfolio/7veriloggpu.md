@@ -8,10 +8,6 @@ generatepage = false
 link = "https://github.com/jkelleyrtp/MIPS-GPU"
 +++
 
-I developed a new UI library for Rust that follows in the footsteps of React. It supports rendering on many platforms: web, desktop, mobile, TUI, LiveView, and more.
+For my final project in Computer Architecture, I designed and implemented a MIPS-based CPU with a GPU compute extension in Verilog.
 
-The library has gained over 3000⭐️ GitHub stars in under 2 months and has an active Discord community of over 300 members.
-
-Dioxus showcases my talents in writing low-level Rust code with manual memory management.
-
-**Skills**: custom futures, custom memory allocators, self-referential data-structures, procedural macros, and WebAssembly.
+I'm proud of this project because it showcases my understanding of HDL in a complex package.

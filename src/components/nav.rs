@@ -4,7 +4,7 @@ use dioxus::router::Link;
 static LINKS: &[(&str, &str)] = &[
     ("Home", "home"),
     ("Portfolio", "portfolio"),
-    ("Blog", "blog"),
+    // ("Blog", "blog"),
     ("Résumé", "resume"),
     ("Contact", "contact"),
 ];

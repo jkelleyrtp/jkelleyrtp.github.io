@@ -1,8 +1,8 @@
 <!DOCTYPE html><html lang="en"><head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta charset="UTF-8">
-    <script type="module">import init from '/index-9a7cb601bc6c4285.js';init('/index-9a7cb601bc6c4285_bg.wasm');</script>
-    
+    <!-- <link data-trunk rel="rust" data-wasm-opt="z" />
+    <link data-trunk rel="copy-dir" href="static" /> -->
     <title>Jonathan Kelley's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.0.0/github-markdown-light.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,11 +35,20 @@
       }
     </style>
   
-<link rel="preload" href="/index-9a7cb601bc6c4285_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="/index-9a7cb601bc6c4285.js"></head>
+<link rel="preload" href="/index-fb928c176f3b76a0_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/index-fb928c176f3b76a0.js"></head>
 
   <body>
     <div id="main"></div>
+    <script type="module">
+      import init from "/{base_path}/assets/dioxus/{app_name}.js";
+      init("/{base_path}/assets/dioxus/{app_name}_bg.wasm").then((wasm) => {
+        if (wasm.__wbindgen_start == undefined) {
+          wasm.main();
+        }
+      });
+    </script>
+    {script_include}
   
 
-</body></html>
+<script type="module">import init from '/index-fb928c176f3b76a0.js';init('/index-fb928c176f3b76a0_bg.wasm');</script></body></html>

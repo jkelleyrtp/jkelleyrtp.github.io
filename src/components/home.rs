@@ -12,30 +12,17 @@ pub fn Home(cx: Scope) -> Element {
                         "Systems Engineer passionate about data, IoT, Rust, and the future of automation."
                     }
                     ul { class: "list-disc text-left pl-4 lg:pl-20 mb-4 text-gray-500",
-                        li {
-                            "Senior in EE+CS at "
-                            a { href: "http://olin.edu", class: "font-bold text-blue-600", target: "_blank",
-                                "Olin College of Engineering"
+                    li {
+                        "Creator and maintainer of the Rust frontend framework "
+                        a { href: "https://dioxuslabs.com", class: "font-bold text-blue-600", target: "_blank",
+                        "Dioxus 🦀"
                             }
                         }
                         li {
-                            "Creator and maintainer of the Rust frontend framework "
-                            a { href: "https://dioxuslabs.com", class: "font-bold text-blue-600", target: "_blank",
-                                "Dioxus 🦀"
-                            }
+                            "Systems Engineer on Zero Trust WARP at "
+                            a { href: "https://cloudflare.com", class: "font-bold text-blue-600", target: "_blank",
+                            "CloudFlare"
                         }
-                        li {
-                            "Partner at student-led venture capital firm "
-                            a { href: "https://www.248builders.vc", class: "font-bold text-blue-600", target: "_blank",
-                                "248 Builders"
-                            }
-                        }
-                        // todo: re-enable when we have a website for leaf
-                        li {
-                            "Solving asset management for manufacturing at "
-                            a { href: "https://leafsystems.io", class: "font-bold text-blue-600", target: "_blank",
-                                "Leaf Systems"
-                            }
                         }
                         li {
                             "Previously fullstack Rust and TypeScript engineer at "
@@ -43,6 +30,25 @@ pub fn Home(cx: Scope) -> Element {
                                 "HASH.ai"
                             }
                         }
+                        li {
+                            "Graduated with degree in ECE at "
+                            a { href: "http://olin.edu", class: "font-bold text-blue-600", target: "_blank",
+                                "Olin College of Engineering"
+                            }
+                        }
+                        // li {
+                        //     "Partner at student-led venture capital firm "
+                        //     a { href: "https://www.248builders.vc", class: "font-bold text-blue-600", target: "_blank",
+                        //         "248 Builders"
+                        //     }
+                        // }
+                        // todo: re-enable when we have a website for leaf
+                        // li {
+                        //     "Solving asset management for manufacturing at "
+                        //     a { href: "https://leafsystems.io", class: "font-bold text-blue-600", target: "_blank",
+                        //         "Leaf Systems"
+                        //     }
+                        // }
                         li {
                             "Passionate about wirless communications and "
                             a { href: "http://github.com/jkelleyrtp/ofdm", class: "font-bold text-blue-600", target: "_blank",
@@ -55,14 +61,14 @@ pub fn Home(cx: Scope) -> Element {
                                 "Broadstreet Scientific"
                             }
                         }
+                        // li {
+                        //     "Co-founder and lead engineer of FIRST Robotics Team "
+                        //     a { href: "https://cortechsrobotics.com", class: "font-bold text-blue-600", target: "_blank",
+                        //         "Cortechs Robotics"
+                        //     }
+                        // }
                         li {
-                            "Co-founder and lead engineer of FIRST Robotics Team "
-                            a { href: "https://cortechsrobotics.com", class: "font-bold text-blue-600", target: "_blank",
-                                "Cortechs Robotics"
-                            }
-                        }
-                        li {
-                            "Lover of hard problems, complex systems, hardware, and low-level software systems"
+                            "Passionate about complex systems, hardware, and low-level software systems"
                         }
                     }
                     img { class: "mx-auto object-cover rounded-lg",

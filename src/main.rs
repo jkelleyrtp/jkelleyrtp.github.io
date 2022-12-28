@@ -1,6 +1,6 @@
 #![allow(non_snake_case)]
 use dioxus::prelude::*;
-use dioxus::router::{Route, Router};
+use dioxus_router::{Route, Router};
 
 pub use components::*;
 mod components {
@@ -17,7 +17,7 @@ mod components {
 pub mod blog_content;
 
 fn main() {
-    dioxus::web::launch(app);
+    dioxus_web::launch(app);
 }
 
 fn app(cx: Scope) -> Element {

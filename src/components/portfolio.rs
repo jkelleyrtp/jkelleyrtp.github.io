@@ -3,7 +3,7 @@ use crate::content::{ContentList, ContentPost};
 use dioxus::prelude::*;
 
 pub fn PortfolioPost(cx: Scope) -> Element {
-    let id = dioxus::router::use_route(&cx).segment("post")?;
+    let id = dioxus_router::use_route(&cx).segment("post")?;
 
     let post = PORTFOLIO_ENTRIES.iter().find(|p| p.title == id)?;
 

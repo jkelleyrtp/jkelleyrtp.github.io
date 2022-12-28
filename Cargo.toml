@@ -7,10 +7,11 @@ edition = "2021"
 
 [dependencies]
 comrak = { version = "0.12.1", default-features = false }
-dioxus = { git = "https://github.com/dioxuslabs/dioxus.git", features = [
+dioxus = { git = "https://github.com/dioxuslabs/dioxus.git" }
+dioxus-router = { git = "https://github.com/dioxuslabs/dioxus.git", features = [
     "web",
-    "ssr",
-    "router",
 ] }
+dioxus-ssr = { git = "https://github.com/dioxuslabs/dioxus.git" }
+dioxus-web = { git = "https://github.com/dioxuslabs/dioxus.git" }
 include_dir = "0.7.2"
 once_cell = "1.9.0"

@@ -1,5 +1,5 @@
 use dioxus::prelude::*;
-use dioxus::router::Link;
+use dioxus_router::Link;
 
 static LINKS: &[(&str, &str)] = &[
     ("Home", "home"),

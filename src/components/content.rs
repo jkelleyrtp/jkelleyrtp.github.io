@@ -1,4 +1,5 @@
-use dioxus::{prelude::*, router::Link};
+use dioxus::prelude::*;
+use dioxus_router::Link;
 
 use crate::blog_content::ContentEntry;
 
@@ -114,7 +115,7 @@ fn ContentPreview<'a>(cx: Scope<'a>, item: &'a ContentEntry, readmore: bool) -> 
     let link = link.unwrap_or("");
 
     let content =
-        cx.use_hook(|_| comrak::markdown_to_html(content, &comrak::ComrakOptions::default()));
+        cx.use_hook(|| comrak::markdown_to_html(content, &comrak::ComrakOptions::default()));
 
     cx.render(rsx!(
         div { class: "w-full px-4 lg:px-16 mb-12 lg:mb-16",

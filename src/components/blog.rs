@@ -3,7 +3,7 @@ use crate::content::{ContentList, ContentPost};
 use dioxus::prelude::*;
 
 pub fn BlogPost(cx: Scope) -> Element {
-    let id = dioxus::router::use_route(&cx).segment("post")?;
+    let id = dioxus_router::use_route(&cx).segment("post")?;
 
     cx.render(rsx! {
         ContentPost {

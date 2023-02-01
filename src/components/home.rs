@@ -72,7 +72,7 @@ pub fn Home(cx: Scope) -> Element {
                         }
                     }
                     img { class: "mx-auto object-cover rounded-lg",
-                        src: "static/images/profile_photo.jpg",
+                        src: "images/profile_photo.jpg",
                         alt: "",
                     }
                 }

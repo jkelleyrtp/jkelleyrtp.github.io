@@ -11,7 +11,7 @@ pub fn Resume(cx: Scope) -> Element {
                     }
                     p { class: "text-base leading-relaxed lg:text-l lg:leading-relaxed text-gray-500",
                         a {
-                            href: "/static/jonathan_kelley_resume.pdf",
+                            href: "jonathan_kelley_resume.pdf",
                             target: "_blank",
                             class: "text-blue-500 hover:text-blue-700",
                             "Click here to download PDF"
@@ -20,7 +20,7 @@ pub fn Resume(cx: Scope) -> Element {
                 }
                 iframe {
                     class: "lg:px-32",
-                    src: "/static/jonathan_kelley_resume.pdf",
+                    src: "jonathan_kelley_resume.pdf",
                     width: "100%",
                     height: "1200px",
                 }

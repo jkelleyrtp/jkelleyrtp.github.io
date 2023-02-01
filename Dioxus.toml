@@ -1,0 +1,37 @@
+[application]
+name = "Jon's Website"
+
+# Dioxus App Default Platform
+# desktop, web, mobile, ssr
+default_platform = "web"
+
+# `build` & `serve` dist path
+out_dir = "dist"
+
+# resource (public) file folder
+asset_dir = "static"
+
+[web.app]
+
+# HTML title tag content
+title = "Dioxus | An elegant GUI library for Rust"
+
+[web.watcher]
+
+watch_path = ["src"]
+index_on_404 = true
+
+# include `assets` in web platform
+[web.resource]
+
+# CSS style file
+style = []
+
+# Javascript code file
+script = []
+
+[web.resource.dev]
+
+# Javascript code file
+# serve: [dev-server] only
+script = []

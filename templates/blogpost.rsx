@@ -1,5 +1,5 @@
 
-fn component(cx: Scope) -> Element {
+fn component() -> Element {
     cx.render(rsx!(
         section { class: "py-20",
             div { class: "container px-4 mx-auto mb-16",
@@ -30,7 +30,7 @@ fn component(cx: Scope) -> Element {
                                 src: "plain-assets/images/indigo-500-avatar.png",
                             }
                         }
-                        div { 
+                        div {
                             h3 { class: "text-2xl font-bold font-heading",
                                 "Danny Bailey"
                             }
@@ -77,14 +77,14 @@ fn component(cx: Scope) -> Element {
 
 mod icons {
 	use super::*;
-    pub(super) fn icon_0(cx: Scope) -> Element {
+    pub(super) fn icon_0() -> Element {
         cx.render(rsx!(
             svg { class: "w-3 h-3 mx-1 text-indigo-500",
                 view_box: "0 0 24 24",
                 xmlns: "http://www.w3.org/2000/svg",
                 stroke: "currentColor",
                 fill: "none",
-                path { 
+                path {
                     stroke_linejoin: "round",
                     stroke_linecap: "round",
                     stroke_width: "2",
@@ -93,14 +93,14 @@ mod icons {
             }
 		))
 	}
-    pub(super) fn icon_1(cx: Scope) -> Element {
+    pub(super) fn icon_1() -> Element {
         cx.render(rsx!(
             svg { class: "w-3 h-3 mx-1 text-indigo-500",
                 fill: "none",
                 view_box: "0 0 24 24",
                 stroke: "currentColor",
                 xmlns: "http://www.w3.org/2000/svg",
-                path { 
+                path {
                     stroke_linecap: "round",
                     stroke_width: "2",
                     d: "M9 5l7 7-7 7",

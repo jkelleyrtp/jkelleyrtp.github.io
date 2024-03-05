@@ -2,20 +2,17 @@ use crate::blog_content::PORTFOLIO_ENTRIES;
 use crate::content::{ContentList, ContentPost};
 use dioxus::prelude::*;
 
-pub fn PortfolioPost(cx: Scope) -> Element {
-    let id = dioxus_router::use_route(&cx).segment("post")?;
-
-    let post = PORTFOLIO_ENTRIES.iter().find(|p| p.title == id)?;
-
-    cx.render(rsx! {
-        ContentPost { post: post }
-    })
+#[component]
+pub fn PortfolioPost(id: String) -> Element {
+    rsx! {
+        ContentPost { post: PORTFOLIO_ENTRIES.iter().find(|p| p.title == id)? }
+    }
 }
 
-pub fn PortfolioList(cx: Scope) -> Element {
-    cx.render(rsx! {
+pub fn PortfolioList() -> Element {
+    rsx! {
         ContentList {
-            header: cx.render(rsx!{
+            header: rsx!{
                 div { class: "max-w-lg lg:max-w-2xl mx-auto mb-16 text-center",
                     // span { class: "text-xs font-semibold text-indigo-500 uppercase",
                     //     "Jon's Portfolio"
@@ -28,9 +25,9 @@ pub fn PortfolioList(cx: Scope) -> Element {
                     //     em { class: "font-bold", " - Stephen R. Covey" }
                     // }
                 }
-            }),
+            },
             content: &PORTFOLIO_ENTRIES,
             readmore: false
         }
-    })
+    }
 }

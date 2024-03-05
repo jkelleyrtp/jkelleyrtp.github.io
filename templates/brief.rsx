@@ -1,5 +1,5 @@
 
-fn Brief(cx: Scope) -> Element {
+fn Brief() -> Element {
     cx.render(rsx!(
         section { class: "py-20",
             div { class: "container px-4 mx-auto",
@@ -215,7 +215,7 @@ fn Brief(cx: Scope) -> Element {
 
 mod icons {
 	use super::*;
-    pub(super) fn icon_0(cx: Scope) -> Element {
+    pub(super) fn icon_0() -> Element {
         cx.render(rsx!(
             svg { class: "ml-1 w-5 h-4",
                 xmlns: "http://www.w3.org/2000/svg",
@@ -231,7 +231,7 @@ mod icons {
             }
 		))
 	}
-    pub(super) fn icon_1(cx: Scope) -> Element {
+    pub(super) fn icon_1() -> Element {
         cx.render(rsx!(
             svg { class: "ml-1 w-5 h-4",
                 stroke: "currentColor",
@@ -247,7 +247,7 @@ mod icons {
             }
 		))
 	}
-    pub(super) fn icon_2(cx: Scope) -> Element {
+    pub(super) fn icon_2() -> Element {
         cx.render(rsx!(
             svg { class: "ml-1 w-5 h-4",
                 view_box: "0 0 24 24",
@@ -263,7 +263,7 @@ mod icons {
             }
 		))
 	}
-    pub(super) fn icon_3(cx: Scope) -> Element {
+    pub(super) fn icon_3() -> Element {
         cx.render(rsx!(
             svg { class: "ml-1 w-5 h-4",
                 stroke: "currentColor",
@@ -279,7 +279,7 @@ mod icons {
             }
 		))
 	}
-    pub(super) fn icon_4(cx: Scope) -> Element {
+    pub(super) fn icon_4() -> Element {
         cx.render(rsx!(
             svg { class: "ml-1 w-5 h-4",
                 view_box: "0 0 24 24",
@@ -295,7 +295,7 @@ mod icons {
             }
 		))
 	}
-    pub(super) fn icon_5(cx: Scope) -> Element {
+    pub(super) fn icon_5() -> Element {
         cx.render(rsx!(
             svg { class: "ml-1 w-5 h-4",
                 view_box: "0 0 24 24",

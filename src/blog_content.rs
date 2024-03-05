@@ -3,7 +3,7 @@ use std::str::Split;
 use include_dir::Dir;
 use once_cell::sync::Lazy;
 
-#[derive(Default, PartialEq, Debug)]
+#[derive(Default, PartialEq, Debug, Clone, Copy)]
 pub struct ContentEntry {
     pub title: &'static str,
     pub date: &'static str,

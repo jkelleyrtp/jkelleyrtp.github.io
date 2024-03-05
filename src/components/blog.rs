@@ -2,21 +2,20 @@ use crate::blog_content::BLOG_POSTS;
 use crate::content::{ContentList, ContentPost};
 use dioxus::prelude::*;
 
-pub fn BlogPost(cx: Scope) -> Element {
-    let id = dioxus_router::use_route(&cx).segment("post")?;
-
-    cx.render(rsx! {
+#[component]
+pub fn BlogPost(id: String) -> Element {
+    rsx! {
         ContentPost {
             post: BLOG_POSTS.iter().find(|p| p.title == id).unwrap(),
         }
-    })
+    }
 }
 
-pub fn BlogList(cx: Scope) -> Element {
-    cx.render(rsx! {
+pub fn BlogList() -> Element {
+    rsx! {
         div {
             ContentList {
-                header: cx.render(rsx!{
+                header: rsx!{
                     div { class: "max-w-lg lg:max-w-2xl mx-auto mb-16 text-center",
                         span { class: "text-xs font-semibold text-indigo-500 uppercase",
                             "Jon's Blog"
@@ -29,10 +28,10 @@ pub fn BlogList(cx: Scope) -> Element {
                             em { class: "font-bold", " - Babe Ruth" }
                         }
                     }
-                }),
+                },
                 content: &BLOG_POSTS,
                 readmore: true
             }
         }
-    })
+    }
 }

@@ -1,7 +1,7 @@
 use dioxus::prelude::*;
 
-pub fn Home(cx: Scope) -> Element {
-    cx.render(rsx!(
+pub fn Home() -> Element {
+    rsx!(
         section { class: "py-12",
             div { class: "container px-4 mx-auto",
                 div { class: "max-w-xl lg:max-w-3xl mx-auto text-center",
@@ -9,29 +9,37 @@ pub fn Home(cx: Scope) -> Element {
                         "Jonathan Kelley"
                     }
                     p { class: "mb-4 text-base leading-relaxed lg:text-xl lg:leading-relaxed text-gray-500",
-                        "Systems Engineer passionate about data, IoT, Rust, and the future of automation."
-                    }
-                    ul { class: "list-disc text-left pl-4 lg:pl-20 mb-4 text-gray-500",
-                    li {
-                        "Creator and maintainer of the Rust frontend framework "
+                        "Founder/CEO of "
                         a { href: "https://dioxuslabs.com", class: "font-bold text-blue-600", target: "_blank",
-                        "Dioxus 🦀"
+                            "Dioxus Labs, YC S23"
+                            }
+                        }
+                    }
+                    ul { class: "list-disc text-left pl-4 lg:pl-20 mb-4 text-gray-500 mx-auto max-w-screen-md",
+                        li {
+                            "Currently making crossplatform development easier with "
+                            a { href: "http://github.com/dioxuslabs", class: "font-bold text-blue-600", target: "_blank",
+                                "Dioxus"
                             }
                         }
                         li {
-                            "Systems Engineer on Zero Trust WARP at "
-                            a { href: "https://cloudflare.com", class: "font-bold text-blue-600", target: "_blank",
-                            "CloudFlare"
-                        }
+                            "Previously, Systems Engineer at "
+                            a { href: "https://cloudflare.com", class: "font-bold text-blue-600", target: "_blank", "Cloudflare" }
                         }
                         li {
-                            "Previously fullstack Rust and TypeScript engineer at "
+                            "Previously, Fullstack Engineer at "
                             a { href: "http://hash.ai", class: "font-bold text-blue-600", target: "_blank",
                                 "HASH.ai"
                             }
                         }
                         li {
-                            "Graduated with degree in ECE at "
+                            "Previously, Hardware Intern at "
+                            a { href: "https://www.nasa.gov/langley/", class: "font-bold text-blue-600", target: "_blank",
+                                "NASA Langley Research Center"
+                            }
+                        }
+                        li {
+                            "Graduated with bachelor's in ECE at "
                             a { href: "http://olin.edu", class: "font-bold text-blue-600", target: "_blank",
                                 "Olin College of Engineering"
                             }
@@ -49,40 +57,39 @@ pub fn Home(cx: Scope) -> Element {
                         //         "Leaf Systems"
                         //     }
                         // }
-                        li {
-                            "Passionate about wirless communications and "
-                            a { href: "http://github.com/jkelleyrtp/ofdm", class: "font-bold text-blue-600", target: "_blank",
-                                "implemented WiFi from scratch"
-                            }
-                        }
-                        li {
-                            "Published research on electrostatic nuclear fusion in "
-                            a { href: "https://broadstreetscientific.ncssm.edu", class: "font-bold text-blue-600", target: "_blank",
-                                "Broadstreet Scientific"
-                            }
-                        }
+                        // li {
+                        //     "Passionate about wirless communications and "
+                        //     a { href: "http://github.com/jkelleyrtp/ofdm", class: "font-bold text-blue-600", target: "_blank",
+                        //         "implemented WiFi from scratch"
+                        //     }
+                        // }
+                        // li {
+                        //     "Published research on electrostatic nuclear fusion in "
+                        //     a { href: "https://broadstreetscientific.ncssm.edu", class: "font-bold text-blue-600", target: "_blank",
+                        //         "Broadstreet Scientific"
+                        //     }
+                        // }
                         // li {
                         //     "Co-founder and lead engineer of FIRST Robotics Team "
                         //     a { href: "https://cortechsrobotics.com", class: "font-bold text-blue-600", target: "_blank",
                         //         "Cortechs Robotics"
                         //     }
                         // }
-                        li {
-                            "Passionate about complex systems, hardware, and low-level software systems"
-                        }
+                        // li {
+                        //     "Passionate about complex systems, hardware, and low-level software systems"
+                        // }
                     }
-                    img { class: "mx-auto object-cover rounded-lg",
-                        src: "images/profile_photo.jpg",
+                    img { class: "mx-auto object-cover rounded-lg max-w-screen-md",
+                        src: "images/profile_photo_2.jpg",
                         alt: "",
                     }
-                }
             }
         }
-    ))
+    )
 }
 
-fn Brief(cx: Scope) -> Element {
-    cx.render(rsx!(
+fn Brief() -> Element {
+    rsx!(
         div { class: "container px-4 mx-auto py-20",
             div { class: "flex flex-wrap -mx-4",
                 div { class: "w-full md:w-1/2 px-4 mb-12 lg:mb-16",
@@ -279,13 +286,13 @@ fn Brief(cx: Scope) -> Element {
                 }
             }
         }
-    ))
+    )
 }
 
 mod icons {
     use super::*;
-    pub(super) fn icon_0(cx: Scope) -> Element {
-        cx.render(rsx!(
+    pub(super) fn icon_0() -> Element {
+        rsx!(
             svg { class: "ml-1 w-5 h-4",
                 xmlns: "http://www.w3.org/2000/svg",
                 view_box: "0 0 24 24",
@@ -298,10 +305,10 @@ mod icons {
                     stroke_linejoin: "round",
                 }
             }
-        ))
+        )
     }
-    pub(super) fn icon_1(cx: Scope) -> Element {
-        cx.render(rsx!(
+    pub(super) fn icon_1() -> Element {
+        rsx!(
             svg { class: "ml-1 w-5 h-4",
                 stroke: "currentColor",
                 view_box: "0 0 24 24",
@@ -314,10 +321,10 @@ mod icons {
                     stroke_linejoin: "round",
                 }
             }
-        ))
+        )
     }
-    pub(super) fn icon_2(cx: Scope) -> Element {
-        cx.render(rsx!(
+    pub(super) fn icon_2() -> Element {
+        rsx!(
             svg { class: "ml-1 w-5 h-4",
                 view_box: "0 0 24 24",
                 fill: "none",
@@ -330,10 +337,10 @@ mod icons {
                     stroke_width: "2",
                 }
             }
-        ))
+        )
     }
-    pub(super) fn icon_3(cx: Scope) -> Element {
-        cx.render(rsx!(
+    pub(super) fn icon_3() -> Element {
+        rsx!(
             svg { class: "ml-1 w-5 h-4",
                 stroke: "currentColor",
                 xmlns: "http://www.w3.org/2000/svg",
@@ -346,10 +353,10 @@ mod icons {
                     d: "M9 5l7 7-7 7",
                 }
             }
-        ))
+        )
     }
-    pub(super) fn icon_4(cx: Scope) -> Element {
-        cx.render(rsx!(
+    pub(super) fn icon_4() -> Element {
+        rsx!(
             svg { class: "ml-1 w-5 h-4",
                 view_box: "0 0 24 24",
                 stroke: "currentColor",
@@ -362,10 +369,10 @@ mod icons {
                     stroke_width: "2",
                 }
             }
-        ))
+        )
     }
-    pub(super) fn icon_5(cx: Scope) -> Element {
-        cx.render(rsx!(
+    pub(super) fn icon_5() -> Element {
+        rsx!(
             svg { class: "ml-1 w-5 h-4",
                 view_box: "0 0 24 24",
                 fill: "none",
@@ -378,6 +385,6 @@ mod icons {
                     d: "M9 5l7 7-7 7",
                 }
             }
-        ))
+        )
     }
 }

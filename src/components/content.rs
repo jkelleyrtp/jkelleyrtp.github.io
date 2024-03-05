@@ -1,11 +1,11 @@
 use dioxus::prelude::*;
-use dioxus_router::Link;
+use dioxus_router::prelude::Link;
 
 use crate::blog_content::ContentEntry;
 
-#[inline_props]
-pub(crate) fn ContentPost(cx: Scope, post: &'static ContentEntry) -> Element {
-    cx.render(rsx!(
+#[component]
+pub(crate) fn ContentPost(post: &'static ContentEntry) -> Element {
+    rsx!(
         section { class: "py-20",
             div { class: "container px-4 mx-auto mb-16",
                 div { class: "max-w-xl lg:max-w-2xl mx-auto text-center",
@@ -76,30 +76,27 @@ pub(crate) fn ContentPost(cx: Scope, post: &'static ContentEntry) -> Element {
                 }
             }
         }
-    ))
+    )
 }
 
-#[inline_props]
-pub fn ContentList<'a>(
-    cx: Scope<'a>,
-    header: Element<'a>,
-    content: &'a [ContentEntry],
-    readmore: bool,
-) -> Element {
-    cx.render(rsx!(
+#[component]
+pub fn ContentList(header: Element, content: &'static [ContentEntry], readmore: bool) -> Element {
+    rsx!(
         section { class: "py-20",
             div { class: "container px-4 sm:px-12 lg:px-24 x-lg:px-48 mx-auto",
-                header,
+                {header},
                 div { class: "flex flex-wrap -mx-4",
-                    content.iter().map(|item| rsx!{ ContentPreview { item: item, readmore: *readmore } })
+                    for item in content.iter() {
+                        ContentPreview { item, readmore }
+                    }
                 }
             }
         }
-    ))
+    )
 }
 
-#[inline_props]
-fn ContentPreview<'a>(cx: Scope<'a>, item: &'a ContentEntry, readmore: bool) -> Element<'a> {
+#[component]
+fn ContentPreview(item: &'static ContentEntry, readmore: bool) -> Element {
     let ContentEntry {
         title,
         date,
@@ -115,9 +112,9 @@ fn ContentPreview<'a>(cx: Scope<'a>, item: &'a ContentEntry, readmore: bool) -> 
     let link = link.unwrap_or("");
 
     let content =
-        cx.use_hook(|| comrak::markdown_to_html(content, &comrak::ComrakOptions::default()));
+        use_signal(|| comrak::markdown_to_html(content, &comrak::ComrakOptions::default()));
 
-    cx.render(rsx!(
+    rsx!(
         div { class: "w-full px-4 lg:px-16 mb-12 lg:mb-16",
             Link { to: "{link}",
                 div { class: "flex flex-wrap -mx-4",
@@ -142,25 +139,25 @@ fn ContentPreview<'a>(cx: Scope<'a>, item: &'a ContentEntry, readmore: bool) -> 
                         p { class: "mb-4 text-m text-gray-500 leading-loose space-y-4",
                             dangerous_inner_html: "{content}"
                         }
-                        readmore.then(|| rsx!{
+                        if readmore {
                             Link {
-                                to: "/{item.archetype}/{slug}",
-                                class: "flex items-center text-m font-bold text-indigo-500 hover:text-indigo-700"
+                                to: format!("/{}/{slug}", item.archetype),
+                                class: "flex items-center text-m font-bold text-indigo-500 hover:text-indigo-700",
                                 span { "Read more" }
                                 span { icons::icon_0 {} }
                             }
-                        })
+                        }
                     }
                 }
             }
         }
-    ))
+    )
 }
 
 mod icons {
     use super::*;
-    pub(super) fn icon_0(cx: Scope) -> Element {
-        cx.render(rsx!(
+    pub(super) fn icon_0() -> Element {
+        rsx!(
             svg { class: "w-3 h-3 mx-1 text-indigo-500",
                 view_box: "0 0 24 24",
                 xmlns: "http://www.w3.org/2000/svg",
@@ -173,10 +170,10 @@ mod icons {
                     d: "M9 5l7 7-7 7",
                 }
             }
-        ))
+        )
     }
-    pub(super) fn icon_1(cx: Scope) -> Element {
-        cx.render(rsx!(
+    pub(super) fn icon_1() -> Element {
+        rsx!(
             svg { class: "w-3 h-3 mx-1 text-indigo-500",
                 fill: "none",
                 view_box: "0 0 24 24",
@@ -189,6 +186,6 @@ mod icons {
                     stroke_linejoin: "round",
                 }
             }
-        ))
+        )
     }
 }

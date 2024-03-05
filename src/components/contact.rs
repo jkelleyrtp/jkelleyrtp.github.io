@@ -1,7 +1,7 @@
 use dioxus::prelude::*;
 
-pub fn Contact(cx: Scope) -> Element {
-    cx.render(rsx!(
+pub fn Contact() -> Element {
+    rsx!(
         section { class: "relative py-20 lg:px-64",
             div { class: "container px-4 mx-auto",
                 div { class: "flex flex-wrap items-center -mx-4",
@@ -9,10 +9,7 @@ pub fn Contact(cx: Scope) -> Element {
                         div { class: "md:max-w-lg lg:max-w-xl",
                             div {
                                 h2 { class: "mb-4 text-3xl leading-tight md:text-4xl md:leading-tight lg:text-5xl lg:leading-tight font-bold font-heading",
-                                    "Feel free to reach out"
-                                }
-                                p { class: "text-base leading-relaxed lg:text-xl lg:leading-relaxed text-gray-500",
-                                    "I'm currently available for new projects and opportunities. If you're interested in working together, please reach out to me."
+                                    "Contact"
                                 }
                             }
                             div { class: "mt-12 w-full flex flex-wrap -mx-4",
@@ -29,38 +26,38 @@ pub fn Contact(cx: Scope) -> Element {
                                         }
                                     }
                                 }
-                                div { class: "w-full md:w-1/2 px-4",
-                                    icons::icon_1 {}
-                                    h3 { class: "mb-2 text-2xl font-semibold text-gray-800",
-                                        "Contact Me"
-                                    }
-                                    p { class: "text-lg text-gray-500 leading-loose",
-                                        a {
-                                            class: "text-blue-600 hover:text-blue-800",
-                                            href: "mailto:jkelleyrtp@gmail.com",
-                                            "Email Me"
-                                        }
-                                    }
-                                }
+                                // div { class: "w-full md:w-1/2 px-4",
+                                //     icons::icon_1 {}
+                                //     h3 { class: "mb-2 text-2xl font-semibold text-gray-800",
+                                //         "Email"
+                                //     }
+                                //     p { class: "text-lg text-gray-500 leading-loose",
+                                //         a {
+                                //             class: "text-blue-600 hover:text-blue-800",
+                                //             href: "mailto:jon+site@dioxuslabs.com",
+                                //             "Email Me"
+                                //         }
+                                //     }
+                                // }
                             }
                         }
                     }
-                    div { class: "w-full lg:w-1/2 px-4",
-                        img { class: "rounded-xl",
-                            alt: "",
-                            src: "static/images/map.png",
-                        }
-                    }
+                    // div { class: "w-full lg:w-1/2 px-4",
+                    //     img { class: "rounded-xl",
+                    //         alt: "",
+                    //         src: "static/images/map.png",
+                    //     }
+                    // }
                 }
             }
         }
-    ))
+    )
 }
 
 mod icons {
     use super::*;
-    pub(super) fn icon_0(cx: Scope) -> Element {
-        cx.render(rsx!(
+    pub(super) fn icon_0() -> Element {
+        rsx!(
             svg { class: "mb-4 text-indigo-500",
                 xmlns: "http://www.w3.org/2000/svg",
                 width: "48",
@@ -78,10 +75,10 @@ mod icons {
                     r: "23.5",
                 }
             }
-		))
+        )
     }
-    pub(super) fn icon_1(cx: Scope) -> Element {
-        cx.render(rsx!(
+    pub(super) fn icon_1() -> Element {
+        rsx!(
             svg { class: "mb-4 text-indigo-500",
                 width: "48",
                 height: "48",
@@ -99,6 +96,6 @@ mod icons {
                     cx: "24",
                 }
             }
-		))
+        )
     }
 }

@@ -1,5 +1,5 @@
 
-fn component(cx: Scope) -> Element {
+fn component() -> Element {
     cx.render(rsx!(
         section { class: "py-20",
             div { class: "container px-4 mx-auto",
@@ -37,10 +37,10 @@ fn component(cx: Scope) -> Element {
                                 }
                                 a { class: "flex items-center text-lg font-bold text-indigo-500 hover:text-indigo-700",
                                     href: "#",
-                                    span { 
+                                    span {
                                         "Read more"
                                     }
-                                    span { 
+                                    span {
                                         icons::icon_0 {}
                                     }
                                 }
@@ -69,10 +69,10 @@ fn component(cx: Scope) -> Element {
                                 }
                                 a { class: "flex items-center text-lg font-bold text-indigo-500 hover:text-indigo-700",
                                     href: "#",
-                                    span { 
+                                    span {
                                         "Read more"
                                     }
-                                    span { 
+                                    span {
                                         icons::icon_1 {}
                                     }
                                 }
@@ -101,10 +101,10 @@ fn component(cx: Scope) -> Element {
                                 }
                                 a { class: "flex items-center text-lg font-bold text-indigo-500 hover:text-indigo-700",
                                     href: "#",
-                                    span { 
+                                    span {
                                         "Read more"
                                     }
-                                    span { 
+                                    span {
                                         icons::icon_2 {}
                                     }
                                 }
@@ -133,10 +133,10 @@ fn component(cx: Scope) -> Element {
                                 }
                                 a { class: "flex items-center text-lg font-bold text-indigo-500 hover:text-indigo-700",
                                     href: "#",
-                                    span { 
+                                    span {
                                         "Read more"
                                     }
-                                    span { 
+                                    span {
                                         icons::icon_3 {}
                                     }
                                 }
@@ -165,10 +165,10 @@ fn component(cx: Scope) -> Element {
                                 }
                                 a { class: "flex items-center text-lg font-bold text-indigo-500 hover:text-indigo-700",
                                     href: "#",
-                                    span { 
+                                    span {
                                         "Read more"
                                     }
-                                    span { 
+                                    span {
                                         icons::icon_4 {}
                                     }
                                 }
@@ -197,10 +197,10 @@ fn component(cx: Scope) -> Element {
                                 }
                                 a { class: "flex items-center text-lg font-bold text-indigo-500 hover:text-indigo-700",
                                     href: "#",
-                                    span { 
+                                    span {
                                         "Read more"
                                     }
-                                    span { 
+                                    span {
                                         icons::icon_5 {}
                                     }
                                 }
@@ -215,14 +215,14 @@ fn component(cx: Scope) -> Element {
 
 mod icons {
 	use super::*;
-    pub(super) fn icon_0(cx: Scope) -> Element {
+    pub(super) fn icon_0() -> Element {
         cx.render(rsx!(
             svg { class: "ml-1 w-5 h-4",
                 stroke: "currentColor",
                 xmlns: "http://www.w3.org/2000/svg",
                 view_box: "0 0 24 24",
                 fill: "none",
-                path { 
+                path {
                     stroke_linecap: "round",
                     stroke_linejoin: "round",
                     d: "M9 5l7 7-7 7",
@@ -231,14 +231,14 @@ mod icons {
             }
 		))
 	}
-    pub(super) fn icon_1(cx: Scope) -> Element {
+    pub(super) fn icon_1() -> Element {
         cx.render(rsx!(
             svg { class: "ml-1 w-5 h-4",
                 xmlns: "http://www.w3.org/2000/svg",
                 view_box: "0 0 24 24",
                 stroke: "currentColor",
                 fill: "none",
-                path { 
+                path {
                     d: "M9 5l7 7-7 7",
                     stroke_linejoin: "round",
                     stroke_linecap: "round",
@@ -247,14 +247,14 @@ mod icons {
             }
 		))
 	}
-    pub(super) fn icon_2(cx: Scope) -> Element {
+    pub(super) fn icon_2() -> Element {
         cx.render(rsx!(
             svg { class: "ml-1 w-5 h-4",
                 xmlns: "http://www.w3.org/2000/svg",
                 view_box: "0 0 24 24",
                 fill: "none",
                 stroke: "currentColor",
-                path { 
+                path {
                     stroke_width: "2",
                     stroke_linecap: "round",
                     d: "M9 5l7 7-7 7",
@@ -263,14 +263,14 @@ mod icons {
             }
 		))
 	}
-    pub(super) fn icon_3(cx: Scope) -> Element {
+    pub(super) fn icon_3() -> Element {
         cx.render(rsx!(
             svg { class: "ml-1 w-5 h-4",
                 fill: "none",
                 stroke: "currentColor",
                 xmlns: "http://www.w3.org/2000/svg",
                 view_box: "0 0 24 24",
-                path { 
+                path {
                     stroke_linejoin: "round",
                     stroke_width: "2",
                     d: "M9 5l7 7-7 7",
@@ -279,14 +279,14 @@ mod icons {
             }
 		))
 	}
-    pub(super) fn icon_4(cx: Scope) -> Element {
+    pub(super) fn icon_4() -> Element {
         cx.render(rsx!(
             svg { class: "ml-1 w-5 h-4",
                 stroke: "currentColor",
                 fill: "none",
                 xmlns: "http://www.w3.org/2000/svg",
                 view_box: "0 0 24 24",
-                path { 
+                path {
                     stroke_linecap: "round",
                     stroke_linejoin: "round",
                     d: "M9 5l7 7-7 7",
@@ -295,14 +295,14 @@ mod icons {
             }
 		))
 	}
-    pub(super) fn icon_5(cx: Scope) -> Element {
+    pub(super) fn icon_5() -> Element {
         cx.render(rsx!(
             svg { class: "ml-1 w-5 h-4",
                 xmlns: "http://www.w3.org/2000/svg",
                 stroke: "currentColor",
                 fill: "none",
                 view_box: "0 0 24 24",
-                path { 
+                path {
                     stroke_width: "2",
                     stroke_linecap: "round",
                     stroke_linejoin: "round",

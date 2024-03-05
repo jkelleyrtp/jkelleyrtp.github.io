@@ -1,7 +1,7 @@
 use dioxus::prelude::*;
 
-pub fn Resume(cx: Scope) -> Element {
-    cx.render(rsx! {
+pub fn Resume() -> Element {
+    rsx! {
         section {
             class: "px-4 py-4 md:px-16 lg:px-64",
             div { class: "container",
@@ -26,5 +26,5 @@ pub fn Resume(cx: Scope) -> Element {
                 }
             }
         }
-    })
+    }
 }

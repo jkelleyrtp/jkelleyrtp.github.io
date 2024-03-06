@@ -24,7 +24,7 @@ jobs:
           use-tool-cache: true
       - uses: actions/checkout@v2
       - name: Build
-        run: dioxus build --release && cp dist/index.html dist/404.html
+        run:  dx build --release && cp dist/index.html dist/404.html
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.3
         with:

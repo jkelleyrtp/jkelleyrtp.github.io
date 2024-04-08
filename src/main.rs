@@ -2,7 +2,11 @@
 use dioxus::prelude::*;
 
 fn main() {
-    launch(app);
+    launch(|| {
+        rsx! {
+            Router::<Route> {}
+        }
+    });
 }
 
 #[derive(Routable, PartialEq, Clone)]
@@ -14,29 +18,27 @@ enum Route {
     #[route("/blog")]
     BlogList,
 
-    #[route("/blog/{id}")]
+    #[route("/blog/:id")]
     BlogPost { id: String },
 
     #[route("/portfolio")]
     PortfolioList,
 
-    #[route("/portfolio/{id}")]
+    #[route("/portfolio/:id")]
     PortfolioPost { id: String },
 
-    // #[route("/resume")]
-    // Resume,
+    #[route("/resume")]
+    Resume,
+
     #[route("/contact")]
     Contact,
-}
-
-fn app() -> Element {
-    rsx! { Router::<Route> {} }
 }
 
 fn NavWrapper() -> Element {
     rsx! {
         nav::Navigation {}
-        Outlet::<Route>{}
+        link { rel: "stylesheet", href: "/tailwind.css" }
+        Outlet::<Route> {}
     }
 }
 

@@ -5,25 +5,16 @@ use crate::blog_content::ContentEntry;
 
 #[component]
 pub(crate) fn ContentPost(post: &'static ContentEntry) -> Element {
-    rsx!(
+    rsx! {
         section { class: "py-20",
             div { class: "container px-4 mx-auto mb-16",
                 div { class: "max-w-xl lg:max-w-2xl mx-auto text-center",
                     div { class: "flex mb-2 items-center justify-center",
-                        a { class: "text-xs text-indigo-500",
-                            href: "#",
-                            "Home"
-                        }
+                        a { class: "text-xs text-indigo-500", href: "#", "Home" }
                         icons::icon_0 {}
-                        a { class: "text-xs text-indigo-500",
-                            href: "#",
-                            "Blog"
-                        }
+                        a { class: "text-xs text-indigo-500", href: "#", "Blog" }
                         icons::icon_1 {}
-                        a { class: "text-xs text-indigo-500",
-                            href: "#",
-                            "Article"
-                        }
+                        a { class: "text-xs text-indigo-500", href: "#", "Article" }
                     }
                     h2 { class: "mb-6 text-3xl leading-tight md:text-4xl md:leading-tight lg:text-5xl lg:leading-tight font-bold font-heading",
                         "Lorem ipsum dolor sit amet consectutar domor at elis"
@@ -76,7 +67,7 @@ pub(crate) fn ContentPost(post: &'static ContentEntry) -> Element {
                 }
             }
         }
-    )
+    }
 }
 
 #[component]

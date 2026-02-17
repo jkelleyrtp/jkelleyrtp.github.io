@@ -20,7 +20,7 @@ jobs:
       - uses: actions-rs/install@v0.1
         with:
           crate: dioxus-cli
-          version: 0.5.4
+          version: 0.7.3
           use-tool-cache: true
       - uses: actions/checkout@v2
       - name: Build

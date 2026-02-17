@@ -34,10 +34,12 @@ enum Route {
     Contact,
 }
 
+const TAILWIND_CSS: Asset = asset!("/assets/tailwind.css");
+
 fn NavWrapper() -> Element {
     rsx! {
+        document::Stylesheet { href: TAILWIND_CSS }
         nav::Navigation {}
-        link { rel: "stylesheet", href: "/tailwind.css" }
         Outlet::<Route> {}
     }
 }

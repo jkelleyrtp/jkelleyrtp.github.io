@@ -3,25 +3,23 @@ use dioxus::prelude::*;
 use crate::Route;
 
 static LINKS: &[(&str, &str)] = &[
-    // ("Home", "/"),
-    // ("Portfolio", "portfolio"),
-    // ("Blog", "blog"),
-    // ("Résumé", "resume"),
-    // ("Contact", "contact"),
+    ("Portfolio", "portfolio"),
+    ("Blog", "blog"),
+    ("Résumé", "resume"),
 ];
 
 fn LinkList() -> Element {
     rsx! {
         for (name , route) in LINKS.iter() {
             li {
-                Link { to: "{route}", class: "text-sm hover:text-indigo-700 font-medium", "{name}" }
+                Link { to: "{route}", class: "text-sm text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200", "{name}" }
             }
         }
         li {
             a {
                 href: "https://www.linkedin.com/in/jonathan-r-kelley",
                 target: "_blank",
-                class: "text-sm hover:text-indigo-700 font-medium",
+                class: "text-gray-500 hover:text-gray-900 transition-colors duration-200",
                 icons::LinkedinLogo {}
             }
         }
@@ -29,7 +27,7 @@ fn LinkList() -> Element {
             a {
                 href: "https://github.com/jkelleyrtp",
                 target: "_blank",
-                class: "text-sm hover:text-indigo-700 font-medium",
+                class: "text-gray-500 hover:text-gray-900 transition-colors duration-200",
                 icons::GithubLogo {}
             }
         }
@@ -39,8 +37,7 @@ fn LinkList() -> Element {
 pub fn Navigation() -> Element {
     let show = use_signal(|| false);
     rsx!(
-        nav { class: "py-8 bg-transparent",
-            // FullNav { show }
+        nav { class: "sticky top-0 z-50 py-5 bg-white/80 backdrop-blur-md border-b border-gray-100",
             MobileNav { show }
         }
     )
@@ -51,7 +48,7 @@ fn MobileNav(show: Signal<bool>) -> Element {
     rsx! {
         div { class: "container px-4 mx-auto",
             div { class: "flex justify-between items-center",
-                Link { to: Route::Home, class: "text-gray-600 text-2xl leading-none", "Jonathan Kelley" }
+                Link { to: Route::Home, class: "text-gray-900 text-xl font-semibold tracking-tight leading-none hover:text-gray-600 transition-colors duration-200", "Jonathan Kelley" }
                 div { class: "hidden",
                     button {
                         class: "block navbar-burger text-indigo-500 hover:text-indigo-700 focus:outline-none",
@@ -59,7 +56,7 @@ fn MobileNav(show: Signal<bool>) -> Element {
                         icons::icon_1 {}
                     }
                 }
-                ul { class: "flex ml-auto mr-10 items-center w-auto space-x-12", LinkList {} }
+                ul { class: "flex ml-auto items-center w-auto space-x-8", LinkList {} }
             }
         }
     }

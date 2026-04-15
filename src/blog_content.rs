@@ -1,5 +1,3 @@
-use std::str::Split;
-
 use include_dir::Dir;
 use once_cell::sync::Lazy;
 
@@ -63,16 +61,4 @@ fn parse_dir(dir: &'static Dir<'static>, archetype: &'static str) -> Vec<Content
             entry
         })
         .collect()
-}
-
-#[test]
-fn demo_dirs() {
-    let p = PORTFOLIO_ENTRIES.get(0).unwrap();
-    dbg!("{:?}", &PORTFOLIO_ENTRIES);
-}
-
-#[test]
-fn demo_dirs_blog() {
-    let p = BLOG_POSTS.get(0).unwrap();
-    dbg!("{:?}", &BLOG_POSTS);
 }

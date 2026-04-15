@@ -9,6 +9,7 @@ pub fn BlogPost(id: String) -> Element {
     }
 }
 
+#[component]
 pub fn BlogList() -> Element {
     let header = rsx! {
         div { class: "max-w-lg lg:max-w-2xl mx-auto mb-16 text-center",

@@ -1,5 +1,4 @@
 use dioxus::prelude::*;
-use dioxus_router::prelude::Link;
 
 use crate::blog_content::ContentEntry;
 
@@ -90,11 +89,9 @@ pub fn ContentList(header: Element, content: &'static [ContentEntry], readmore: 
 fn ContentPreview(item: &'static ContentEntry, readmore: bool) -> Element {
     let ContentEntry {
         title,
-        date,
         image,
         description,
         content,
-        weight,
         slug,
         link,
         ..

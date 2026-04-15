@@ -5,10 +5,13 @@ use dioxus::prelude::*;
 #[component]
 pub fn PortfolioPost(id: String) -> Element {
     rsx! {
-        ContentPost { post: PORTFOLIO_ENTRIES.iter().find(|p| p.title == id)? }
+        ContentPost {
+            post: PORTFOLIO_ENTRIES.iter().find(|p| p.title == id).unwrap()
+        }
     }
 }
 
+#[component]
 pub fn PortfolioList() -> Element {
     rsx! {
         ContentList {
